@@ -1,0 +1,2251 @@
+
+(base) E:\Unity-ML-Agents\AI-Parking-Unity-main\Parking Environment>conda create --name test2 python=3.8
+Retrieving notices: ...working... done
+Channels:
+ - defaults
+Platform: win-64
+Collecting package metadata (repodata.json): done
+Solving environment: done
+
+## Package Plan ##
+
+  environment location: D:\Anaconda3_2024\envs\test2
+
+  added / updated specs:
+    - python=3.8
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    libffi-3.4.4               |       hd77b12b_1         122 KB
+    pip-24.2                   |   py38haa95532_0         2.4 MB
+    python-3.8.19              |       h1aa4202_0        18.9 MB
+    setuptools-72.1.0          |   py38haa95532_0         2.4 MB
+    sqlite-3.45.3              |       h2bbff1b_0         973 KB
+    vc-14.40                   |       h2eaa2aa_0          10 KB
+    vs2015_runtime-14.40.33807 |       h98bb1dd_0         1.3 MB
+    wheel-0.43.0               |   py38haa95532_0         137 KB
+    ------------------------------------------------------------
+                                           Total:        26.3 MB
+
+The following NEW packages will be INSTALLED:
+
+  ca-certificates    pkgs/main/win-64::ca-certificates-2024.7.2-haa95532_0
+  libffi             pkgs/main/win-64::libffi-3.4.4-hd77b12b_1
+  openssl            pkgs/main/win-64::openssl-3.0.15-h827c3e9_0
+  pip                pkgs/main/win-64::pip-24.2-py38haa95532_0
+  python             pkgs/main/win-64::python-3.8.19-h1aa4202_0
+  setuptools         pkgs/main/win-64::setuptools-72.1.0-py38haa95532_0
+  sqlite             pkgs/main/win-64::sqlite-3.45.3-h2bbff1b_0
+  vc                 pkgs/main/win-64::vc-14.40-h2eaa2aa_0
+  vs2015_runtime     pkgs/main/win-64::vs2015_runtime-14.40.33807-h98bb1dd_0
+  wheel              pkgs/main/win-64::wheel-0.43.0-py38haa95532_0
+
+
+Proceed ([y]/n)? y
+
+
+Downloading and Extracting Packages:
+
+Preparing transaction: done
+Executing transaction: done
+#
+# To activate this environment, use
+#
+#     $ conda activate test2
+#
+# To deactivate an active environment, use
+#
+#     $ conda deactivate
+
+
+(base) E:\Unity-ML-Agents\AI-Parking-Unity-main\Parking Environment>conda create -n mlagents python=3.8
+Channels:
+ - defaults
+Platform: win-64
+Collecting package metadata (repodata.json): done
+Solving environment: done
+
+## Package Plan ##
+
+  environment location: D:\Anaconda3_2024\envs\mlagents
+
+  added / updated specs:
+    - python=3.8
+
+
+The following NEW packages will be INSTALLED:
+
+  ca-certificates    pkgs/main/win-64::ca-certificates-2024.7.2-haa95532_0
+  libffi             pkgs/main/win-64::libffi-3.4.4-hd77b12b_1
+  openssl            pkgs/main/win-64::openssl-3.0.15-h827c3e9_0
+  pip                pkgs/main/win-64::pip-24.2-py38haa95532_0
+  python             pkgs/main/win-64::python-3.8.19-h1aa4202_0
+  setuptools         pkgs/main/win-64::setuptools-72.1.0-py38haa95532_0
+  sqlite             pkgs/main/win-64::sqlite-3.45.3-h2bbff1b_0
+  vc                 pkgs/main/win-64::vc-14.40-h2eaa2aa_0
+  vs2015_runtime     pkgs/main/win-64::vs2015_runtime-14.40.33807-h98bb1dd_0
+  wheel              pkgs/main/win-64::wheel-0.43.0-py38haa95532_0
+
+
+Proceed ([y]/n)? y
+
+
+Downloading and Extracting Packages:
+
+Preparing transaction: done
+Executing transaction: done
+#
+# To activate this environment, use
+#
+#     $ conda activate mlagents
+#
+# To deactivate an active environment, use
+#
+#     $ conda deactivate
+
+
+(base) E:\Unity-ML-Agents\AI-Parking-Unity-main\Parking Environment>conda activate mlagents
+
+(mlagents) E:\Unity-ML-Agents\AI-Parking-Unity-main\Parking Environment>pip install mlagents
+Collecting mlagents
+  Downloading mlagents-0.30.0.tar.gz (131 kB)
+  Preparing metadata (setup.py) ... done
+Collecting grpcio>=1.11.0 (from mlagents)
+  Downloading grpcio-1.66.1-cp38-cp38-win_amd64.whl.metadata (4.0 kB)
+Collecting h5py>=2.9.0 (from mlagents)
+  Downloading h5py-3.11.0-cp38-cp38-win_amd64.whl.metadata (2.5 kB)
+Collecting mlagents_envs==0.30.0 (from mlagents)
+  Downloading mlagents_envs-0.30.0.tar.gz (56 kB)
+  Preparing metadata (setup.py) ... done
+Collecting numpy<2.0,>=1.13.3 (from mlagents)
+  Downloading numpy-1.24.4-cp38-cp38-win_amd64.whl.metadata (5.6 kB)
+Collecting Pillow>=4.2.1 (from mlagents)
+  Downloading pillow-10.4.0-cp38-cp38-win_amd64.whl.metadata (9.3 kB)
+Collecting protobuf>=3.6 (from mlagents)
+  Downloading protobuf-5.28.0-cp38-cp38-win_amd64.whl.metadata (592 bytes)
+Collecting pyyaml>=3.1.0 (from mlagents)
+  Downloading PyYAML-6.0.2-cp38-cp38-win_amd64.whl.metadata (2.1 kB)
+Collecting tensorboard>=1.15 (from mlagents)
+  Downloading tensorboard-2.14.0-py3-none-any.whl.metadata (1.8 kB)
+Collecting attrs>=19.3.0 (from mlagents)
+  Using cached attrs-24.2.0-py3-none-any.whl.metadata (11 kB)
+Collecting pypiwin32==223 (from mlagents)
+  Using cached pypiwin32-223-py3-none-any.whl.metadata (236 bytes)
+Collecting cattrs<1.7,>=1.1.0 (from mlagents)
+  Using cached cattrs-1.5.0-py3-none-any.whl.metadata (16 kB)
+Collecting cloudpickle (from mlagents_envs==0.30.0->mlagents)
+  Using cached cloudpickle-3.0.0-py3-none-any.whl.metadata (7.0 kB)
+Collecting gym>=0.21.0 (from mlagents_envs==0.30.0->mlagents)
+  Downloading gym-0.26.2.tar.gz (721 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 721.7/721.7 kB 169.1 kB/s eta 0:00:00
+  Installing build dependencies ... done
+  Getting requirements to build wheel ... done
+  Preparing metadata (pyproject.toml) ... done
+Collecting pettingzoo==1.15.0 (from mlagents_envs==0.30.0->mlagents)
+  Downloading PettingZoo-1.15.0.tar.gz (756 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 756.7/756.7 kB 304.3 kB/s eta 0:00:00
+  Preparing metadata (setup.py) ... done
+Collecting numpy<2.0,>=1.13.3 (from mlagents)
+  Downloading numpy-1.21.2-cp38-cp38-win_amd64.whl.metadata (2.1 kB)
+Collecting filelock>=3.4.0 (from mlagents_envs==0.30.0->mlagents)
+  Downloading filelock-3.16.0-py3-none-any.whl.metadata (3.0 kB)
+Collecting pywin32>=223 (from pypiwin32==223->mlagents)
+  Downloading pywin32-306-cp38-cp38-win_amd64.whl.metadata (6.5 kB)
+Collecting absl-py>=0.4 (from tensorboard>=1.15->mlagents)
+  Using cached absl_py-2.1.0-py3-none-any.whl.metadata (2.3 kB)
+Collecting google-auth<3,>=1.6.3 (from tensorboard>=1.15->mlagents)
+  Downloading google_auth-2.34.0-py2.py3-none-any.whl.metadata (4.7 kB)
+Collecting google-auth-oauthlib<1.1,>=0.5 (from tensorboard>=1.15->mlagents)
+  Downloading google_auth_oauthlib-1.0.0-py2.py3-none-any.whl.metadata (2.7 kB)
+Collecting markdown>=2.6.8 (from tensorboard>=1.15->mlagents)
+  Using cached Markdown-3.7-py3-none-any.whl.metadata (7.0 kB)
+Collecting requests<3,>=2.21.0 (from tensorboard>=1.15->mlagents)
+  Using cached requests-2.32.3-py3-none-any.whl.metadata (4.6 kB)
+Requirement already satisfied: setuptools>=41.0.0 in d:\anaconda3_2024\envs\mlagents\lib\site-packages (from tensorboard>=1.15->mlagents) (72.1.0)
+Collecting tensorboard-data-server<0.8.0,>=0.7.0 (from tensorboard>=1.15->mlagents)
+  Using cached tensorboard_data_server-0.7.2-py3-none-any.whl.metadata (1.1 kB)
+Collecting werkzeug>=1.0.1 (from tensorboard>=1.15->mlagents)
+  Using cached werkzeug-3.0.4-py3-none-any.whl.metadata (3.7 kB)
+Requirement already satisfied: wheel>=0.26 in d:\anaconda3_2024\envs\mlagents\lib\site-packages (from tensorboard>=1.15->mlagents) (0.43.0)
+Collecting cachetools<6.0,>=2.0.0 (from google-auth<3,>=1.6.3->tensorboard>=1.15->mlagents)
+  Downloading cachetools-5.5.0-py3-none-any.whl.metadata (5.3 kB)
+Collecting pyasn1-modules>=0.2.1 (from google-auth<3,>=1.6.3->tensorboard>=1.15->mlagents)
+  Downloading pyasn1_modules-0.4.1.tar.gz (310 kB)
+  Installing build dependencies ... done
+  Getting requirements to build wheel ... done
+  Preparing metadata (pyproject.toml) ... done
+Collecting rsa<5,>=3.1.4 (from google-auth<3,>=1.6.3->tensorboard>=1.15->mlagents)
+  Downloading rsa-4.9-py3-none-any.whl.metadata (4.2 kB)
+Collecting requests-oauthlib>=0.7.0 (from google-auth-oauthlib<1.1,>=0.5->tensorboard>=1.15->mlagents)
+  Downloading requests_oauthlib-2.0.0-py2.py3-none-any.whl.metadata (11 kB)
+Collecting gym-notices>=0.0.4 (from gym>=0.21.0->mlagents_envs==0.30.0->mlagents)
+  Using cached gym_notices-0.0.8-py3-none-any.whl.metadata (1.0 kB)
+Collecting importlib-metadata>=4.8.0 (from gym>=0.21.0->mlagents_envs==0.30.0->mlagents)
+  Downloading importlib_metadata-8.4.0-py3-none-any.whl.metadata (4.7 kB)
+Collecting charset-normalizer<4,>=2 (from requests<3,>=2.21.0->tensorboard>=1.15->mlagents)
+  Downloading charset_normalizer-3.3.2-cp38-cp38-win_amd64.whl.metadata (34 kB)
+Collecting idna<4,>=2.5 (from requests<3,>=2.21.0->tensorboard>=1.15->mlagents)
+  Downloading idna-3.8-py3-none-any.whl.metadata (9.9 kB)
+Collecting urllib3<3,>=1.21.1 (from requests<3,>=2.21.0->tensorboard>=1.15->mlagents)
+  Using cached urllib3-2.2.2-py3-none-any.whl.metadata (6.4 kB)
+Collecting certifi>=2017.4.17 (from requests<3,>=2.21.0->tensorboard>=1.15->mlagents)
+  Downloading certifi-2024.8.30-py3-none-any.whl.metadata (2.2 kB)
+Collecting MarkupSafe>=2.1.1 (from werkzeug>=1.0.1->tensorboard>=1.15->mlagents)
+  Downloading MarkupSafe-2.1.5-cp38-cp38-win_amd64.whl.metadata (3.1 kB)
+Collecting zipp>=0.5 (from importlib-metadata>=4.8.0->gym>=0.21.0->mlagents_envs==0.30.0->mlagents)
+  Downloading zipp-3.20.1-py3-none-any.whl.metadata (3.7 kB)
+Collecting pyasn1<0.7.0,>=0.4.6 (from pyasn1-modules>=0.2.1->google-auth<3,>=1.6.3->tensorboard>=1.15->mlagents)
+  Downloading pyasn1-0.6.1.tar.gz (145 kB)
+  Installing build dependencies ... done
+  Getting requirements to build wheel ... done
+  Preparing metadata (pyproject.toml) ... done
+Collecting oauthlib>=3.0.0 (from requests-oauthlib>=0.7.0->google-auth-oauthlib<1.1,>=0.5->tensorboard>=1.15->mlagents)
+  Downloading oauthlib-3.2.2-py3-none-any.whl.metadata (7.5 kB)
+Downloading numpy-1.21.2-cp38-cp38-win_amd64.whl (14.0 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 14.0/14.0 MB 573.0 kB/s eta 0:00:00
+Using cached pypiwin32-223-py3-none-any.whl (1.7 kB)
+Using cached attrs-24.2.0-py3-none-any.whl (63 kB)
+Using cached cattrs-1.5.0-py3-none-any.whl (19 kB)
+Downloading grpcio-1.66.1-cp38-cp38-win_amd64.whl (4.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.3/4.3 MB 1.3 MB/s eta 0:00:00
+Downloading h5py-3.11.0-cp38-cp38-win_amd64.whl (3.0 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.0/3.0 MB 727.2 kB/s eta 0:00:00
+Downloading pillow-10.4.0-cp38-cp38-win_amd64.whl (2.6 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.6/2.6 MB 122.3 kB/s eta 0:00:00
+Downloading protobuf-5.28.0-cp38-cp38-win_amd64.whl (431 kB)
+Downloading PyYAML-6.0.2-cp38-cp38-win_amd64.whl (162 kB)
+Downloading tensorboard-2.14.0-py3-none-any.whl (5.5 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.5/5.5 MB 61.1 kB/s eta 0:00:00
+Using cached absl_py-2.1.0-py3-none-any.whl (133 kB)
+Downloading filelock-3.16.0-py3-none-any.whl (16 kB)
+Downloading google_auth-2.34.0-py2.py3-none-any.whl (200 kB)
+Downloading google_auth_oauthlib-1.0.0-py2.py3-none-any.whl (18 kB)
+Using cached cloudpickle-3.0.0-py3-none-any.whl (20 kB)
+Using cached Markdown-3.7-py3-none-any.whl (106 kB)
+Downloading pywin32-306-cp38-cp38-win_amd64.whl (9.4 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 9.4/9.4 MB 33.6 kB/s eta 0:00:00
+Using cached requests-2.32.3-py3-none-any.whl (64 kB)
+Using cached tensorboard_data_server-0.7.2-py3-none-any.whl (2.4 kB)
+Using cached werkzeug-3.0.4-py3-none-any.whl (227 kB)
+Downloading cachetools-5.5.0-py3-none-any.whl (9.5 kB)
+Downloading certifi-2024.8.30-py3-none-any.whl (167 kB)
+Downloading charset_normalizer-3.3.2-cp38-cp38-win_amd64.whl (99 kB)
+Using cached gym_notices-0.0.8-py3-none-any.whl (3.0 kB)
+Downloading idna-3.8-py3-none-any.whl (66 kB)
+Downloading importlib_metadata-8.4.0-py3-none-any.whl (26 kB)
+Downloading MarkupSafe-2.1.5-cp38-cp38-win_amd64.whl (17 kB)
+Downloading requests_oauthlib-2.0.0-py2.py3-none-any.whl (24 kB)
+Downloading rsa-4.9-py3-none-any.whl (34 kB)
+Using cached urllib3-2.2.2-py3-none-any.whl (121 kB)
+Downloading oauthlib-3.2.2-py3-none-any.whl (151 kB)
+Downloading zipp-3.20.1-py3-none-any.whl (9.0 kB)
+Building wheels for collected packages: mlagents, mlagents_envs, pettingzoo, gym, pyasn1-modules, pyasn1
+  Building wheel for mlagents (setup.py) ... done
+  Created wheel for mlagents: filename=mlagents-0.30.0-py3-none-any.whl size=168457 sha256=a976ce6a1f76870b48fce5be82563abf909c700320c955120bbd093a2ec7efb4
+  Stored in directory: c:\users\vignesh\appdata\local\pip\cache\wheels\49\7d\20\fb38c6b62eabe3a513b7e2dd5b8c3448bace07c50dd4fd3189
+  Building wheel for mlagents_envs (setup.py) ... done
+  Created wheel for mlagents_envs: filename=mlagents_envs-0.30.0-py3-none-any.whl size=88765 sha256=3b262811b331e7e842e77508f5b0392786e8b56785ebc06a61256b7b29d4d172
+  Stored in directory: c:\users\vignesh\appdata\local\pip\cache\wheels\22\4f\9e\6ea15537d075a8192e311275de9075bad97f5a47e5459ff54b
+  Building wheel for pettingzoo (setup.py) ... done
+  Created wheel for pettingzoo: filename=PettingZoo-1.15.0-py3-none-any.whl size=875645 sha256=e0954e795a61716f92482c1201b33e6f76284d8233162c39d5d2eea97a8127c0
+  Stored in directory: c:\users\vignesh\appdata\local\pip\cache\wheels\a2\34\c9\a037b6115f93c2833fd6b2c7ce80b588b932987a7827fe9380
+  Building wheel for gym (pyproject.toml) ... done
+  Created wheel for gym: filename=gym-0.26.2-py3-none-any.whl size=827634 sha256=173cc276da5a26aaf96054610e048c388ffd514bbba052f25fa3fb44b5204003
+  Stored in directory: c:\users\vignesh\appdata\local\pip\cache\wheels\17\79\65\7afedc162d858b02708a3b8f7a6dd5b1000dcd5b0f894f7cc1
+  Building wheel for pyasn1-modules (pyproject.toml) ... done
+  Created wheel for pyasn1-modules: filename=pyasn1_modules-0.4.1-py3-none-any.whl size=181239 sha256=fe66101b55b927d6029a80570ee1f4664e5719a711b9a59e6de899b99b5ac213
+  Stored in directory: c:\users\vignesh\appdata\local\pip\cache\wheels\29\e1\27\a497865d96b1705ed544ce485c5770085336dc9e3ed716e3e2
+  Building wheel for pyasn1 (pyproject.toml) ... done
+  Created wheel for pyasn1: filename=pyasn1-0.6.1-py3-none-any.whl size=83528 sha256=b9d611df26f1b4a7c9dc4c54fb422cac9f1d8033ac3147df7a6c50367ed06870
+  Stored in directory: c:\users\vignesh\appdata\local\pip\cache\wheels\b3\dd\69\475a061dc1161d711f3f19f413af53f0d1055dea682eb6a748
+Successfully built mlagents mlagents_envs pettingzoo gym pyasn1-modules pyasn1
+Installing collected packages: pywin32, gym-notices, zipp, urllib3, tensorboard-data-server, pyyaml, pypiwin32, pyasn1, protobuf, Pillow, oauthlib, numpy, MarkupSafe, idna, grpcio, filelock, cloudpickle, charset-normalizer, certifi, cachetools, attrs, absl-py, werkzeug, rsa, requests, pyasn1-modules, importlib-metadata, h5py, cattrs, requests-oauthlib, markdown, gym, google-auth, pettingzoo, google-auth-oauthlib, tensorboard, mlagents_envs, mlagents
+Successfully installed MarkupSafe-2.1.5 Pillow-10.4.0 absl-py-2.1.0 attrs-24.2.0 cachetools-5.5.0 cattrs-1.5.0 certifi-2024.8.30 charset-normalizer-3.3.2 cloudpickle-3.0.0 filelock-3.16.0 google-auth-2.34.0 google-auth-oauthlib-1.0.0 grpcio-1.66.1 gym-0.26.2 gym-notices-0.0.8 h5py-3.11.0 idna-3.8 importlib-metadata-8.4.0 markdown-3.7 mlagents-0.30.0 mlagents_envs-0.30.0 numpy-1.21.2 oauthlib-3.2.2 pettingzoo-1.15.0 protobuf-5.28.0 pyasn1-0.6.1 pyasn1-modules-0.4.1 pypiwin32-223 pywin32-306 pyyaml-6.0.2 requests-2.32.3 requests-oauthlib-2.0.0 rsa-4.9 tensorboard-2.14.0 tensorboard-data-server-0.7.2 urllib3-2.2.2 werkzeug-3.0.4 zipp-3.20.1
+
+(mlagents) E:\Unity-ML-Agents\AI-Parking-Unity-main\Parking Environment>conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia
+Channels:
+ - pytorch
+ - nvidia
+ - defaults
+Platform: win-64
+Collecting package metadata (repodata.json): done
+Solving environment: done
+
+## Package Plan ##
+
+  environment location: D:\Anaconda3_2024\envs\mlagents
+
+  added / updated specs:
+    - pytorch
+    - pytorch-cuda=11.8
+    - torchaudio
+    - torchvision
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    blas-1.0                   |              mkl           6 KB
+    brotli-python-1.0.9        |   py38hd77b12b_8         347 KB
+    certifi-2024.8.30          |   py38haa95532_0         163 KB
+    charset-normalizer-3.3.2   |     pyhd3eb1b0_0          44 KB
+    cuda-cccl-12.6.37          |                0          16 KB  nvidia
+    cuda-cccl_win-64-12.6.37   |                0         1.3 MB  nvidia
+    cuda-cudart-11.8.89        |                0         1.4 MB  nvidia
+    cuda-cudart-dev-11.8.89    |                0         723 KB  nvidia
+    cuda-cupti-11.8.87         |                0        11.5 MB  nvidia
+    cuda-libraries-11.8.0      |                0           1 KB  nvidia
+    cuda-libraries-dev-11.8.0  |                0           1 KB  nvidia
+    cuda-nvrtc-11.8.89         |                0        72.1 MB  nvidia
+    cuda-nvrtc-dev-11.8.89     |                0        16.1 MB  nvidia
+    cuda-nvtx-11.8.86          |                0          43 KB  nvidia
+    cuda-profiler-api-12.6.68  |                0          19 KB  nvidia
+    cuda-runtime-11.8.0        |                0           1 KB  nvidia
+    cuda-version-12.6          |                3          16 KB  nvidia
+    filelock-3.13.1            |   py38haa95532_0          21 KB
+    freetype-2.12.1            |       ha860e81_0         490 KB
+    gmpy2-2.1.2                |   py38h7f96b67_0         160 KB
+    idna-3.7                   |   py38haa95532_0         115 KB
+    intel-openmp-2023.1.0      |   h59b6b97_46320         2.7 MB
+    jinja2-3.1.4               |   py38haa95532_0         271 KB
+    jpeg-9e                    |       h827c3e9_3         334 KB
+    lcms2-2.12                 |       h83e58a3_0         454 KB
+    lerc-3.0                   |       hd77b12b_0         120 KB
+    libcublas-11.11.3.6        |                0          33 KB  nvidia
+    libcublas-dev-11.11.3.6    |                0       375.9 MB  nvidia
+    libcufft-10.9.0.58         |                0           6 KB  nvidia
+    libcufft-dev-10.9.0.58     |                0       144.6 MB  nvidia
+    libcurand-10.3.7.68        |                0        49.3 MB  nvidia
+    libcurand-dev-10.3.7.68    |                0         376 KB  nvidia
+    libcusolver-11.4.1.48      |                0          29 KB  nvidia
+    libcusolver-dev-11.4.1.48  |                0        94.1 MB  nvidia
+    libcusparse-11.7.5.86      |                0          13 KB  nvidia
+    libcusparse-dev-11.7.5.86  |                0       175.7 MB  nvidia
+    libdeflate-1.17            |       h2bbff1b_1         153 KB
+    libjpeg-turbo-2.0.0        |       h196d8e1_0         618 KB
+    libnpp-11.8.0.86           |                0         294 KB  nvidia
+    libnpp-dev-11.8.0.86       |                0       143.2 MB  nvidia
+    libnvjpeg-11.9.0.86        |                0           4 KB  nvidia
+    libnvjpeg-dev-11.9.0.86    |                0         1.9 MB  nvidia
+    libpng-1.6.39              |       h8cc25b3_0         369 KB
+    libtiff-4.5.1              |       hd77b12b_0         1.1 MB
+    libuv-1.48.0               |       h827c3e9_0         322 KB
+    libwebp-base-1.3.2         |       h2bbff1b_0         306 KB
+    lz4-c-1.9.4                |       h2bbff1b_1         152 KB
+    markupsafe-2.1.3           |   py38h2bbff1b_0          25 KB
+    mkl-2023.1.0               |   h6b88ed4_46358       155.9 MB
+    mkl-service-2.4.0          |   py38h2bbff1b_1          44 KB
+    mkl_fft-1.3.8              |   py38h2bbff1b_0         169 KB
+    mkl_random-1.2.4           |   py38h59b6b97_0         230 KB
+    mpc-1.1.0                  |       h7edee0f_1         260 KB
+    mpfr-4.0.2                 |       h62dcd97_1         1.5 MB
+    mpir-3.0.0                 |       hec2e145_1         1.3 MB
+    mpmath-1.3.0               |   py38haa95532_0         832 KB
+    networkx-3.1               |   py38haa95532_0         2.7 MB
+    numpy-1.24.3               |   py38h79a8e48_1          11 KB
+    numpy-base-1.24.3          |   py38h8a87ada_1         5.1 MB
+    openjpeg-2.5.2             |       hae555c5_0         268 KB
+    pillow-10.4.0              |   py38h827c3e9_0         851 KB
+    pysocks-1.7.1              |   py38haa95532_0          31 KB
+    pytorch-2.4.1              |py3.8_cuda11.8_cudnn9_0        1.38 GB  pytorch
+    pytorch-cuda-11.8          |       h24eeafa_5           4 KB  pytorch
+    pytorch-mutex-1.0          |             cuda           3 KB  pytorch
+    pyyaml-6.0.1               |   py38h2bbff1b_0         160 KB
+    requests-2.32.3            |   py38haa95532_0         100 KB
+    sympy-1.13.2               |   py38haa95532_0        11.3 MB
+    tbb-2021.8.0               |       h59b6b97_0         149 KB
+    torchaudio-2.4.1           |       py38_cu118         7.0 MB  pytorch
+    torchvision-0.19.1         |       py38_cu118         7.7 MB  pytorch
+    typing_extensions-4.11.0   |   py38haa95532_0          61 KB
+    urllib3-2.2.2              |   py38haa95532_0         178 KB
+    win_inet_pton-1.1.0        |   py38haa95532_0          35 KB
+    xz-5.4.6                   |       h8cc25b3_1         609 KB
+    yaml-0.2.5                 |       he774522_0          62 KB
+    zlib-1.2.13                |       h8cc25b3_1         131 KB
+    zstd-1.5.5                 |       hd43e919_2         720 KB
+    ------------------------------------------------------------
+                                           Total:        2.64 GB
+
+The following NEW packages will be INSTALLED:
+
+  blas               pkgs/main/win-64::blas-1.0-mkl
+  brotli-python      pkgs/main/win-64::brotli-python-1.0.9-py38hd77b12b_8
+  certifi            pkgs/main/win-64::certifi-2024.8.30-py38haa95532_0
+  charset-normalizer pkgs/main/noarch::charset-normalizer-3.3.2-pyhd3eb1b0_0
+  cuda-cccl          nvidia/win-64::cuda-cccl-12.6.37-0
+  cuda-cccl_win-64   nvidia/noarch::cuda-cccl_win-64-12.6.37-0
+  cuda-cudart        nvidia/win-64::cuda-cudart-11.8.89-0
+  cuda-cudart-dev    nvidia/win-64::cuda-cudart-dev-11.8.89-0
+  cuda-cupti         nvidia/win-64::cuda-cupti-11.8.87-0
+  cuda-libraries     nvidia/win-64::cuda-libraries-11.8.0-0
+  cuda-libraries-dev nvidia/win-64::cuda-libraries-dev-11.8.0-0
+  cuda-nvrtc         nvidia/win-64::cuda-nvrtc-11.8.89-0
+  cuda-nvrtc-dev     nvidia/win-64::cuda-nvrtc-dev-11.8.89-0
+  cuda-nvtx          nvidia/win-64::cuda-nvtx-11.8.86-0
+  cuda-profiler-api  nvidia/win-64::cuda-profiler-api-12.6.68-0
+  cuda-runtime       nvidia/win-64::cuda-runtime-11.8.0-0
+  cuda-version       nvidia/noarch::cuda-version-12.6-3
+  filelock           pkgs/main/win-64::filelock-3.13.1-py38haa95532_0
+  freetype           pkgs/main/win-64::freetype-2.12.1-ha860e81_0
+  gmpy2              pkgs/main/win-64::gmpy2-2.1.2-py38h7f96b67_0
+  idna               pkgs/main/win-64::idna-3.7-py38haa95532_0
+  intel-openmp       pkgs/main/win-64::intel-openmp-2023.1.0-h59b6b97_46320
+  jinja2             pkgs/main/win-64::jinja2-3.1.4-py38haa95532_0
+  jpeg               pkgs/main/win-64::jpeg-9e-h827c3e9_3
+  lcms2              pkgs/main/win-64::lcms2-2.12-h83e58a3_0
+  lerc               pkgs/main/win-64::lerc-3.0-hd77b12b_0
+  libcublas          nvidia/win-64::libcublas-11.11.3.6-0
+  libcublas-dev      nvidia/win-64::libcublas-dev-11.11.3.6-0
+  libcufft           nvidia/win-64::libcufft-10.9.0.58-0
+  libcufft-dev       nvidia/win-64::libcufft-dev-10.9.0.58-0
+  libcurand          nvidia/win-64::libcurand-10.3.7.68-0
+  libcurand-dev      nvidia/win-64::libcurand-dev-10.3.7.68-0
+  libcusolver        nvidia/win-64::libcusolver-11.4.1.48-0
+  libcusolver-dev    nvidia/win-64::libcusolver-dev-11.4.1.48-0
+  libcusparse        nvidia/win-64::libcusparse-11.7.5.86-0
+  libcusparse-dev    nvidia/win-64::libcusparse-dev-11.7.5.86-0
+  libdeflate         pkgs/main/win-64::libdeflate-1.17-h2bbff1b_1
+  libjpeg-turbo      pkgs/main/win-64::libjpeg-turbo-2.0.0-h196d8e1_0
+  libnpp             nvidia/win-64::libnpp-11.8.0.86-0
+  libnpp-dev         nvidia/win-64::libnpp-dev-11.8.0.86-0
+  libnvjpeg          nvidia/win-64::libnvjpeg-11.9.0.86-0
+  libnvjpeg-dev      nvidia/win-64::libnvjpeg-dev-11.9.0.86-0
+  libpng             pkgs/main/win-64::libpng-1.6.39-h8cc25b3_0
+  libtiff            pkgs/main/win-64::libtiff-4.5.1-hd77b12b_0
+  libuv              pkgs/main/win-64::libuv-1.48.0-h827c3e9_0
+  libwebp-base       pkgs/main/win-64::libwebp-base-1.3.2-h2bbff1b_0
+  lz4-c              pkgs/main/win-64::lz4-c-1.9.4-h2bbff1b_1
+  markupsafe         pkgs/main/win-64::markupsafe-2.1.3-py38h2bbff1b_0
+  mkl                pkgs/main/win-64::mkl-2023.1.0-h6b88ed4_46358
+  mkl-service        pkgs/main/win-64::mkl-service-2.4.0-py38h2bbff1b_1
+  mkl_fft            pkgs/main/win-64::mkl_fft-1.3.8-py38h2bbff1b_0
+  mkl_random         pkgs/main/win-64::mkl_random-1.2.4-py38h59b6b97_0
+  mpc                pkgs/main/win-64::mpc-1.1.0-h7edee0f_1
+  mpfr               pkgs/main/win-64::mpfr-4.0.2-h62dcd97_1
+  mpir               pkgs/main/win-64::mpir-3.0.0-hec2e145_1
+  mpmath             pkgs/main/win-64::mpmath-1.3.0-py38haa95532_0
+  networkx           pkgs/main/win-64::networkx-3.1-py38haa95532_0
+  numpy              pkgs/main/win-64::numpy-1.24.3-py38h79a8e48_1
+  numpy-base         pkgs/main/win-64::numpy-base-1.24.3-py38h8a87ada_1
+  openjpeg           pkgs/main/win-64::openjpeg-2.5.2-hae555c5_0
+  pillow             pkgs/main/win-64::pillow-10.4.0-py38h827c3e9_0
+  pysocks            pkgs/main/win-64::pysocks-1.7.1-py38haa95532_0
+  pytorch            pytorch/win-64::pytorch-2.4.1-py3.8_cuda11.8_cudnn9_0
+  pytorch-cuda       pytorch/win-64::pytorch-cuda-11.8-h24eeafa_5
+  pytorch-mutex      pytorch/noarch::pytorch-mutex-1.0-cuda
+  pyyaml             pkgs/main/win-64::pyyaml-6.0.1-py38h2bbff1b_0
+  requests           pkgs/main/win-64::requests-2.32.3-py38haa95532_0
+  sympy              pkgs/main/win-64::sympy-1.13.2-py38haa95532_0
+  tbb                pkgs/main/win-64::tbb-2021.8.0-h59b6b97_0
+  torchaudio         pytorch/win-64::torchaudio-2.4.1-py38_cu118
+  torchvision        pytorch/win-64::torchvision-0.19.1-py38_cu118
+  typing_extensions  pkgs/main/win-64::typing_extensions-4.11.0-py38haa95532_0
+  urllib3            pkgs/main/win-64::urllib3-2.2.2-py38haa95532_0
+  win_inet_pton      pkgs/main/win-64::win_inet_pton-1.1.0-py38haa95532_0
+  xz                 pkgs/main/win-64::xz-5.4.6-h8cc25b3_1
+  yaml               pkgs/main/win-64::yaml-0.2.5-he774522_0
+  zlib               pkgs/main/win-64::zlib-1.2.13-h8cc25b3_1
+  zstd               pkgs/main/win-64::zstd-1.5.5-hd43e919_2
+
+
+Proceed ([y]/n)? y
+
+
+Downloading and Extracting Packages:
+
+
+('Connection broken: IncompleteRead(52685165 bytes read, 341476325 more expected)', IncompleteRead(52685165 bytes read,)
+('Connection broken: IncompleteRead(52685165 bytes read, 341476325 more expected)', IncompleteRead(52685165 bytes read,)
+
+(mlagents) E:\Unity-ML-Agents\AI-Parking-Unity-main\Parking Environment>conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia
+Channels:
+ - pytorch
+ - nvidia
+ - defaults
+Platform: win-64
+Collecting package metadata (repodata.json): done
+Solving environment: done
+
+## Package Plan ##
+
+  environment location: D:\Anaconda3_2024\envs\mlagents
+
+  added / updated specs:
+    - pytorch
+    - pytorch-cuda=11.8
+    - torchaudio
+    - torchvision
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    blas-1.0                   |              mkl           6 KB
+    brotli-python-1.0.9        |   py38hd77b12b_8         347 KB
+    certifi-2024.8.30          |   py38haa95532_0         163 KB
+    charset-normalizer-3.3.2   |     pyhd3eb1b0_0          44 KB
+    cuda-cccl-12.6.37          |                0          16 KB  nvidia
+    cuda-cccl_win-64-12.6.37   |                0         1.3 MB  nvidia
+    cuda-cudart-11.8.89        |                0         1.4 MB  nvidia
+    cuda-cudart-dev-11.8.89    |                0         723 KB  nvidia
+    cuda-cupti-11.8.87         |                0        11.5 MB  nvidia
+    cuda-libraries-11.8.0      |                0           1 KB  nvidia
+    cuda-libraries-dev-11.8.0  |                0           1 KB  nvidia
+    cuda-nvrtc-11.8.89         |                0        72.1 MB  nvidia
+    cuda-nvrtc-dev-11.8.89     |                0        16.1 MB  nvidia
+    cuda-nvtx-11.8.86          |                0          43 KB  nvidia
+    cuda-profiler-api-12.6.68  |                0          19 KB  nvidia
+    cuda-runtime-11.8.0        |                0           1 KB  nvidia
+    cuda-version-12.6          |                3          16 KB  nvidia
+    filelock-3.13.1            |   py38haa95532_0          21 KB
+    freetype-2.12.1            |       ha860e81_0         490 KB
+    gmpy2-2.1.2                |   py38h7f96b67_0         160 KB
+    idna-3.7                   |   py38haa95532_0         115 KB
+    intel-openmp-2023.1.0      |   h59b6b97_46320         2.7 MB
+    jinja2-3.1.4               |   py38haa95532_0         271 KB
+    jpeg-9e                    |       h827c3e9_3         334 KB
+    lcms2-2.12                 |       h83e58a3_0         454 KB
+    lerc-3.0                   |       hd77b12b_0         120 KB
+    libcublas-11.11.3.6        |                0          33 KB  nvidia
+    libcublas-dev-11.11.3.6    |                0       375.9 MB  nvidia
+    libcufft-10.9.0.58         |                0           6 KB  nvidia
+    libcufft-dev-10.9.0.58     |                0       144.6 MB  nvidia
+    libcurand-10.3.7.68        |                0        49.3 MB  nvidia
+    libcurand-dev-10.3.7.68    |                0         376 KB  nvidia
+    libcusolver-11.4.1.48      |                0          29 KB  nvidia
+    libcusolver-dev-11.4.1.48  |                0        94.1 MB  nvidia
+    libcusparse-11.7.5.86      |                0          13 KB  nvidia
+    libcusparse-dev-11.7.5.86  |                0       175.7 MB  nvidia
+    libdeflate-1.17            |       h2bbff1b_1         153 KB
+    libjpeg-turbo-2.0.0        |       h196d8e1_0         618 KB
+    libnpp-11.8.0.86           |                0         294 KB  nvidia
+    libnpp-dev-11.8.0.86       |                0       143.2 MB  nvidia
+    libnvjpeg-11.9.0.86        |                0           4 KB  nvidia
+    libnvjpeg-dev-11.9.0.86    |                0         1.9 MB  nvidia
+    libpng-1.6.39              |       h8cc25b3_0         369 KB
+    libtiff-4.5.1              |       hd77b12b_0         1.1 MB
+    libuv-1.48.0               |       h827c3e9_0         322 KB
+    libwebp-base-1.3.2         |       h2bbff1b_0         306 KB
+    lz4-c-1.9.4                |       h2bbff1b_1         152 KB
+    markupsafe-2.1.3           |   py38h2bbff1b_0          25 KB
+    mkl-2023.1.0               |   h6b88ed4_46358       155.9 MB
+    mkl-service-2.4.0          |   py38h2bbff1b_1          44 KB
+    mkl_fft-1.3.8              |   py38h2bbff1b_0         169 KB
+    mkl_random-1.2.4           |   py38h59b6b97_0         230 KB
+    mpc-1.1.0                  |       h7edee0f_1         260 KB
+    mpfr-4.0.2                 |       h62dcd97_1         1.5 MB
+    mpir-3.0.0                 |       hec2e145_1         1.3 MB
+    mpmath-1.3.0               |   py38haa95532_0         832 KB
+    networkx-3.1               |   py38haa95532_0         2.7 MB
+    numpy-1.24.3               |   py38h79a8e48_1          11 KB
+    numpy-base-1.24.3          |   py38h8a87ada_1         5.1 MB
+    openjpeg-2.5.2             |       hae555c5_0         268 KB
+    pillow-10.4.0              |   py38h827c3e9_0         851 KB
+    pysocks-1.7.1              |   py38haa95532_0          31 KB
+    pytorch-2.4.1              |py3.8_cuda11.8_cudnn9_0        1.38 GB  pytorch
+    pytorch-cuda-11.8          |       h24eeafa_5           4 KB  pytorch
+    pytorch-mutex-1.0          |             cuda           3 KB  pytorch
+    pyyaml-6.0.1               |   py38h2bbff1b_0         160 KB
+    requests-2.32.3            |   py38haa95532_0         100 KB
+    sympy-1.13.2               |   py38haa95532_0        11.3 MB
+    tbb-2021.8.0               |       h59b6b97_0         149 KB
+    torchaudio-2.4.1           |       py38_cu118         7.0 MB  pytorch
+    torchvision-0.19.1         |       py38_cu118         7.7 MB  pytorch
+    typing_extensions-4.11.0   |   py38haa95532_0          61 KB
+    urllib3-2.2.2              |   py38haa95532_0         178 KB
+    win_inet_pton-1.1.0        |   py38haa95532_0          35 KB
+    xz-5.4.6                   |       h8cc25b3_1         609 KB
+    yaml-0.2.5                 |       he774522_0          62 KB
+    zlib-1.2.13                |       h8cc25b3_1         131 KB
+    zstd-1.5.5                 |       hd43e919_2         720 KB
+    ------------------------------------------------------------
+                                           Total:        2.64 GB
+
+The following NEW packages will be INSTALLED:
+
+  blas               pkgs/main/win-64::blas-1.0-mkl
+  brotli-python      pkgs/main/win-64::brotli-python-1.0.9-py38hd77b12b_8
+  certifi            pkgs/main/win-64::certifi-2024.8.30-py38haa95532_0
+  charset-normalizer pkgs/main/noarch::charset-normalizer-3.3.2-pyhd3eb1b0_0
+  cuda-cccl          nvidia/win-64::cuda-cccl-12.6.37-0
+  cuda-cccl_win-64   nvidia/noarch::cuda-cccl_win-64-12.6.37-0
+  cuda-cudart        nvidia/win-64::cuda-cudart-11.8.89-0
+  cuda-cudart-dev    nvidia/win-64::cuda-cudart-dev-11.8.89-0
+  cuda-cupti         nvidia/win-64::cuda-cupti-11.8.87-0
+  cuda-libraries     nvidia/win-64::cuda-libraries-11.8.0-0
+  cuda-libraries-dev nvidia/win-64::cuda-libraries-dev-11.8.0-0
+  cuda-nvrtc         nvidia/win-64::cuda-nvrtc-11.8.89-0
+  cuda-nvrtc-dev     nvidia/win-64::cuda-nvrtc-dev-11.8.89-0
+  cuda-nvtx          nvidia/win-64::cuda-nvtx-11.8.86-0
+  cuda-profiler-api  nvidia/win-64::cuda-profiler-api-12.6.68-0
+  cuda-runtime       nvidia/win-64::cuda-runtime-11.8.0-0
+  cuda-version       nvidia/noarch::cuda-version-12.6-3
+  filelock           pkgs/main/win-64::filelock-3.13.1-py38haa95532_0
+  freetype           pkgs/main/win-64::freetype-2.12.1-ha860e81_0
+  gmpy2              pkgs/main/win-64::gmpy2-2.1.2-py38h7f96b67_0
+  idna               pkgs/main/win-64::idna-3.7-py38haa95532_0
+  intel-openmp       pkgs/main/win-64::intel-openmp-2023.1.0-h59b6b97_46320
+  jinja2             pkgs/main/win-64::jinja2-3.1.4-py38haa95532_0
+  jpeg               pkgs/main/win-64::jpeg-9e-h827c3e9_3
+  lcms2              pkgs/main/win-64::lcms2-2.12-h83e58a3_0
+  lerc               pkgs/main/win-64::lerc-3.0-hd77b12b_0
+  libcublas          nvidia/win-64::libcublas-11.11.3.6-0
+  libcublas-dev      nvidia/win-64::libcublas-dev-11.11.3.6-0
+  libcufft           nvidia/win-64::libcufft-10.9.0.58-0
+  libcufft-dev       nvidia/win-64::libcufft-dev-10.9.0.58-0
+  libcurand          nvidia/win-64::libcurand-10.3.7.68-0
+  libcurand-dev      nvidia/win-64::libcurand-dev-10.3.7.68-0
+  libcusolver        nvidia/win-64::libcusolver-11.4.1.48-0
+  libcusolver-dev    nvidia/win-64::libcusolver-dev-11.4.1.48-0
+  libcusparse        nvidia/win-64::libcusparse-11.7.5.86-0
+  libcusparse-dev    nvidia/win-64::libcusparse-dev-11.7.5.86-0
+  libdeflate         pkgs/main/win-64::libdeflate-1.17-h2bbff1b_1
+  libjpeg-turbo      pkgs/main/win-64::libjpeg-turbo-2.0.0-h196d8e1_0
+  libnpp             nvidia/win-64::libnpp-11.8.0.86-0
+  libnpp-dev         nvidia/win-64::libnpp-dev-11.8.0.86-0
+  libnvjpeg          nvidia/win-64::libnvjpeg-11.9.0.86-0
+  libnvjpeg-dev      nvidia/win-64::libnvjpeg-dev-11.9.0.86-0
+  libpng             pkgs/main/win-64::libpng-1.6.39-h8cc25b3_0
+  libtiff            pkgs/main/win-64::libtiff-4.5.1-hd77b12b_0
+  libuv              pkgs/main/win-64::libuv-1.48.0-h827c3e9_0
+  libwebp-base       pkgs/main/win-64::libwebp-base-1.3.2-h2bbff1b_0
+  lz4-c              pkgs/main/win-64::lz4-c-1.9.4-h2bbff1b_1
+  markupsafe         pkgs/main/win-64::markupsafe-2.1.3-py38h2bbff1b_0
+  mkl                pkgs/main/win-64::mkl-2023.1.0-h6b88ed4_46358
+  mkl-service        pkgs/main/win-64::mkl-service-2.4.0-py38h2bbff1b_1
+  mkl_fft            pkgs/main/win-64::mkl_fft-1.3.8-py38h2bbff1b_0
+  mkl_random         pkgs/main/win-64::mkl_random-1.2.4-py38h59b6b97_0
+  mpc                pkgs/main/win-64::mpc-1.1.0-h7edee0f_1
+  mpfr               pkgs/main/win-64::mpfr-4.0.2-h62dcd97_1
+  mpir               pkgs/main/win-64::mpir-3.0.0-hec2e145_1
+  mpmath             pkgs/main/win-64::mpmath-1.3.0-py38haa95532_0
+  networkx           pkgs/main/win-64::networkx-3.1-py38haa95532_0
+  numpy              pkgs/main/win-64::numpy-1.24.3-py38h79a8e48_1
+  numpy-base         pkgs/main/win-64::numpy-base-1.24.3-py38h8a87ada_1
+  openjpeg           pkgs/main/win-64::openjpeg-2.5.2-hae555c5_0
+  pillow             pkgs/main/win-64::pillow-10.4.0-py38h827c3e9_0
+  pysocks            pkgs/main/win-64::pysocks-1.7.1-py38haa95532_0
+  pytorch            pytorch/win-64::pytorch-2.4.1-py3.8_cuda11.8_cudnn9_0
+  pytorch-cuda       pytorch/win-64::pytorch-cuda-11.8-h24eeafa_5
+  pytorch-mutex      pytorch/noarch::pytorch-mutex-1.0-cuda
+  pyyaml             pkgs/main/win-64::pyyaml-6.0.1-py38h2bbff1b_0
+  requests           pkgs/main/win-64::requests-2.32.3-py38haa95532_0
+  sympy              pkgs/main/win-64::sympy-1.13.2-py38haa95532_0
+  tbb                pkgs/main/win-64::tbb-2021.8.0-h59b6b97_0
+  torchaudio         pytorch/win-64::torchaudio-2.4.1-py38_cu118
+  torchvision        pytorch/win-64::torchvision-0.19.1-py38_cu118
+  typing_extensions  pkgs/main/win-64::typing_extensions-4.11.0-py38haa95532_0
+  urllib3            pkgs/main/win-64::urllib3-2.2.2-py38haa95532_0
+  win_inet_pton      pkgs/main/win-64::win_inet_pton-1.1.0-py38haa95532_0
+  xz                 pkgs/main/win-64::xz-5.4.6-h8cc25b3_1
+  yaml               pkgs/main/win-64::yaml-0.2.5-he774522_0
+  zlib               pkgs/main/win-64::zlib-1.2.13-h8cc25b3_1
+  zstd               pkgs/main/win-64::zstd-1.5.5-hd43e919_2
+
+
+Proceed ([y]/n)? y
+
+
+Downloading and Extracting Packages:
+
+
+('Connection broken: IncompleteRead(13117766 bytes read, 93644722 more expected)', IncompleteRead(13117766 bytes read, )
+('Connection broken: IncompleteRead(13117766 bytes read, 93644722 more expected)', IncompleteRead(13117766 bytes read, )
+
+(mlagents) E:\Unity-ML-Agents\AI-Parking-Unity-main\Parking Environment>conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia
+Channels:
+ - pytorch
+ - nvidia
+ - defaults
+Platform: win-64
+Collecting package metadata (repodata.json): done
+Solving environment: done
+
+## Package Plan ##
+
+  environment location: D:\Anaconda3_2024\envs\mlagents
+
+  added / updated specs:
+    - pytorch
+    - pytorch-cuda=11.8
+    - torchaudio
+    - torchvision
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    blas-1.0                   |              mkl           6 KB
+    brotli-python-1.0.9        |   py38hd77b12b_8         347 KB
+    certifi-2024.8.30          |   py38haa95532_0         163 KB
+    charset-normalizer-3.3.2   |     pyhd3eb1b0_0          44 KB
+    cuda-cccl-12.6.37          |                0          16 KB  nvidia
+    cuda-cccl_win-64-12.6.37   |                0         1.3 MB  nvidia
+    cuda-cudart-11.8.89        |                0         1.4 MB  nvidia
+    cuda-cudart-dev-11.8.89    |                0         723 KB  nvidia
+    cuda-cupti-11.8.87         |                0        11.5 MB  nvidia
+    cuda-libraries-11.8.0      |                0           1 KB  nvidia
+    cuda-libraries-dev-11.8.0  |                0           1 KB  nvidia
+    cuda-nvrtc-11.8.89         |                0        72.1 MB  nvidia
+    cuda-nvrtc-dev-11.8.89     |                0        16.1 MB  nvidia
+    cuda-nvtx-11.8.86          |                0          43 KB  nvidia
+    cuda-profiler-api-12.6.68  |                0          19 KB  nvidia
+    cuda-runtime-11.8.0        |                0           1 KB  nvidia
+    cuda-version-12.6          |                3          16 KB  nvidia
+    filelock-3.13.1            |   py38haa95532_0          21 KB
+    freetype-2.12.1            |       ha860e81_0         490 KB
+    gmpy2-2.1.2                |   py38h7f96b67_0         160 KB
+    idna-3.7                   |   py38haa95532_0         115 KB
+    intel-openmp-2023.1.0      |   h59b6b97_46320         2.7 MB
+    jinja2-3.1.4               |   py38haa95532_0         271 KB
+    jpeg-9e                    |       h827c3e9_3         334 KB
+    lcms2-2.12                 |       h83e58a3_0         454 KB
+    lerc-3.0                   |       hd77b12b_0         120 KB
+    libcublas-11.11.3.6        |                0          33 KB  nvidia
+    libcublas-dev-11.11.3.6    |                0       375.9 MB  nvidia
+    libcufft-10.9.0.58         |                0           6 KB  nvidia
+    libcufft-dev-10.9.0.58     |                0       144.6 MB  nvidia
+    libcurand-10.3.7.68        |                0        49.3 MB  nvidia
+    libcurand-dev-10.3.7.68    |                0         376 KB  nvidia
+    libcusolver-11.4.1.48      |                0          29 KB  nvidia
+    libcusolver-dev-11.4.1.48  |                0        94.1 MB  nvidia
+    libcusparse-11.7.5.86      |                0          13 KB  nvidia
+    libcusparse-dev-11.7.5.86  |                0       175.7 MB  nvidia
+    libdeflate-1.17            |       h2bbff1b_1         153 KB
+    libjpeg-turbo-2.0.0        |       h196d8e1_0         618 KB
+    libnpp-11.8.0.86           |                0         294 KB  nvidia
+    libnpp-dev-11.8.0.86       |                0       143.2 MB  nvidia
+    libnvjpeg-11.9.0.86        |                0           4 KB  nvidia
+    libnvjpeg-dev-11.9.0.86    |                0         1.9 MB  nvidia
+    libpng-1.6.39              |       h8cc25b3_0         369 KB
+    libtiff-4.5.1              |       hd77b12b_0         1.1 MB
+    libuv-1.48.0               |       h827c3e9_0         322 KB
+    libwebp-base-1.3.2         |       h2bbff1b_0         306 KB
+    lz4-c-1.9.4                |       h2bbff1b_1         152 KB
+    markupsafe-2.1.3           |   py38h2bbff1b_0          25 KB
+    mkl-2023.1.0               |   h6b88ed4_46358       155.9 MB
+    mkl-service-2.4.0          |   py38h2bbff1b_1          44 KB
+    mkl_fft-1.3.8              |   py38h2bbff1b_0         169 KB
+    mkl_random-1.2.4           |   py38h59b6b97_0         230 KB
+    mpc-1.1.0                  |       h7edee0f_1         260 KB
+    mpfr-4.0.2                 |       h62dcd97_1         1.5 MB
+    mpir-3.0.0                 |       hec2e145_1         1.3 MB
+    mpmath-1.3.0               |   py38haa95532_0         832 KB
+    networkx-3.1               |   py38haa95532_0         2.7 MB
+    numpy-1.24.3               |   py38h79a8e48_1          11 KB
+    numpy-base-1.24.3          |   py38h8a87ada_1         5.1 MB
+    openjpeg-2.5.2             |       hae555c5_0         268 KB
+    pillow-10.4.0              |   py38h827c3e9_0         851 KB
+    pysocks-1.7.1              |   py38haa95532_0          31 KB
+    pytorch-2.4.1              |py3.8_cuda11.8_cudnn9_0        1.38 GB  pytorch
+    pytorch-cuda-11.8          |       h24eeafa_5           4 KB  pytorch
+    pytorch-mutex-1.0          |             cuda           3 KB  pytorch
+    pyyaml-6.0.1               |   py38h2bbff1b_0         160 KB
+    requests-2.32.3            |   py38haa95532_0         100 KB
+    sympy-1.13.2               |   py38haa95532_0        11.3 MB
+    tbb-2021.8.0               |       h59b6b97_0         149 KB
+    torchaudio-2.4.1           |       py38_cu118         7.0 MB  pytorch
+    torchvision-0.19.1         |       py38_cu118         7.7 MB  pytorch
+    typing_extensions-4.11.0   |   py38haa95532_0          61 KB
+    urllib3-2.2.2              |   py38haa95532_0         178 KB
+    win_inet_pton-1.1.0        |   py38haa95532_0          35 KB
+    xz-5.4.6                   |       h8cc25b3_1         609 KB
+    yaml-0.2.5                 |       he774522_0          62 KB
+    zlib-1.2.13                |       h8cc25b3_1         131 KB
+    zstd-1.5.5                 |       hd43e919_2         720 KB
+    ------------------------------------------------------------
+                                           Total:        2.64 GB
+
+The following NEW packages will be INSTALLED:
+
+  blas               pkgs/main/win-64::blas-1.0-mkl
+  brotli-python      pkgs/main/win-64::brotli-python-1.0.9-py38hd77b12b_8
+  certifi            pkgs/main/win-64::certifi-2024.8.30-py38haa95532_0
+  charset-normalizer pkgs/main/noarch::charset-normalizer-3.3.2-pyhd3eb1b0_0
+  cuda-cccl          nvidia/win-64::cuda-cccl-12.6.37-0
+  cuda-cccl_win-64   nvidia/noarch::cuda-cccl_win-64-12.6.37-0
+  cuda-cudart        nvidia/win-64::cuda-cudart-11.8.89-0
+  cuda-cudart-dev    nvidia/win-64::cuda-cudart-dev-11.8.89-0
+  cuda-cupti         nvidia/win-64::cuda-cupti-11.8.87-0
+  cuda-libraries     nvidia/win-64::cuda-libraries-11.8.0-0
+  cuda-libraries-dev nvidia/win-64::cuda-libraries-dev-11.8.0-0
+  cuda-nvrtc         nvidia/win-64::cuda-nvrtc-11.8.89-0
+  cuda-nvrtc-dev     nvidia/win-64::cuda-nvrtc-dev-11.8.89-0
+  cuda-nvtx          nvidia/win-64::cuda-nvtx-11.8.86-0
+  cuda-profiler-api  nvidia/win-64::cuda-profiler-api-12.6.68-0
+  cuda-runtime       nvidia/win-64::cuda-runtime-11.8.0-0
+  cuda-version       nvidia/noarch::cuda-version-12.6-3
+  filelock           pkgs/main/win-64::filelock-3.13.1-py38haa95532_0
+  freetype           pkgs/main/win-64::freetype-2.12.1-ha860e81_0
+  gmpy2              pkgs/main/win-64::gmpy2-2.1.2-py38h7f96b67_0
+  idna               pkgs/main/win-64::idna-3.7-py38haa95532_0
+  intel-openmp       pkgs/main/win-64::intel-openmp-2023.1.0-h59b6b97_46320
+  jinja2             pkgs/main/win-64::jinja2-3.1.4-py38haa95532_0
+  jpeg               pkgs/main/win-64::jpeg-9e-h827c3e9_3
+  lcms2              pkgs/main/win-64::lcms2-2.12-h83e58a3_0
+  lerc               pkgs/main/win-64::lerc-3.0-hd77b12b_0
+  libcublas          nvidia/win-64::libcublas-11.11.3.6-0
+  libcublas-dev      nvidia/win-64::libcublas-dev-11.11.3.6-0
+  libcufft           nvidia/win-64::libcufft-10.9.0.58-0
+  libcufft-dev       nvidia/win-64::libcufft-dev-10.9.0.58-0
+  libcurand          nvidia/win-64::libcurand-10.3.7.68-0
+  libcurand-dev      nvidia/win-64::libcurand-dev-10.3.7.68-0
+  libcusolver        nvidia/win-64::libcusolver-11.4.1.48-0
+  libcusolver-dev    nvidia/win-64::libcusolver-dev-11.4.1.48-0
+  libcusparse        nvidia/win-64::libcusparse-11.7.5.86-0
+  libcusparse-dev    nvidia/win-64::libcusparse-dev-11.7.5.86-0
+  libdeflate         pkgs/main/win-64::libdeflate-1.17-h2bbff1b_1
+  libjpeg-turbo      pkgs/main/win-64::libjpeg-turbo-2.0.0-h196d8e1_0
+  libnpp             nvidia/win-64::libnpp-11.8.0.86-0
+  libnpp-dev         nvidia/win-64::libnpp-dev-11.8.0.86-0
+  libnvjpeg          nvidia/win-64::libnvjpeg-11.9.0.86-0
+  libnvjpeg-dev      nvidia/win-64::libnvjpeg-dev-11.9.0.86-0
+  libpng             pkgs/main/win-64::libpng-1.6.39-h8cc25b3_0
+  libtiff            pkgs/main/win-64::libtiff-4.5.1-hd77b12b_0
+  libuv              pkgs/main/win-64::libuv-1.48.0-h827c3e9_0
+  libwebp-base       pkgs/main/win-64::libwebp-base-1.3.2-h2bbff1b_0
+  lz4-c              pkgs/main/win-64::lz4-c-1.9.4-h2bbff1b_1
+  markupsafe         pkgs/main/win-64::markupsafe-2.1.3-py38h2bbff1b_0
+  mkl                pkgs/main/win-64::mkl-2023.1.0-h6b88ed4_46358
+  mkl-service        pkgs/main/win-64::mkl-service-2.4.0-py38h2bbff1b_1
+  mkl_fft            pkgs/main/win-64::mkl_fft-1.3.8-py38h2bbff1b_0
+  mkl_random         pkgs/main/win-64::mkl_random-1.2.4-py38h59b6b97_0
+  mpc                pkgs/main/win-64::mpc-1.1.0-h7edee0f_1
+  mpfr               pkgs/main/win-64::mpfr-4.0.2-h62dcd97_1
+  mpir               pkgs/main/win-64::mpir-3.0.0-hec2e145_1
+  mpmath             pkgs/main/win-64::mpmath-1.3.0-py38haa95532_0
+  networkx           pkgs/main/win-64::networkx-3.1-py38haa95532_0
+  numpy              pkgs/main/win-64::numpy-1.24.3-py38h79a8e48_1
+  numpy-base         pkgs/main/win-64::numpy-base-1.24.3-py38h8a87ada_1
+  openjpeg           pkgs/main/win-64::openjpeg-2.5.2-hae555c5_0
+  pillow             pkgs/main/win-64::pillow-10.4.0-py38h827c3e9_0
+  pysocks            pkgs/main/win-64::pysocks-1.7.1-py38haa95532_0
+  pytorch            pytorch/win-64::pytorch-2.4.1-py3.8_cuda11.8_cudnn9_0
+  pytorch-cuda       pytorch/win-64::pytorch-cuda-11.8-h24eeafa_5
+  pytorch-mutex      pytorch/noarch::pytorch-mutex-1.0-cuda
+  pyyaml             pkgs/main/win-64::pyyaml-6.0.1-py38h2bbff1b_0
+  requests           pkgs/main/win-64::requests-2.32.3-py38haa95532_0
+  sympy              pkgs/main/win-64::sympy-1.13.2-py38haa95532_0
+  tbb                pkgs/main/win-64::tbb-2021.8.0-h59b6b97_0
+  torchaudio         pytorch/win-64::torchaudio-2.4.1-py38_cu118
+  torchvision        pytorch/win-64::torchvision-0.19.1-py38_cu118
+  typing_extensions  pkgs/main/win-64::typing_extensions-4.11.0-py38haa95532_0
+  urllib3            pkgs/main/win-64::urllib3-2.2.2-py38haa95532_0
+  win_inet_pton      pkgs/main/win-64::win_inet_pton-1.1.0-py38haa95532_0
+  xz                 pkgs/main/win-64::xz-5.4.6-h8cc25b3_1
+  yaml               pkgs/main/win-64::yaml-0.2.5-he774522_0
+  zlib               pkgs/main/win-64::zlib-1.2.13-h8cc25b3_1
+  zstd               pkgs/main/win-64::zstd-1.5.5-hd43e919_2
+
+
+Proceed ([y]/n)? y
+
+
+Downloading and Extracting Packages:
+
+
+CondaHTTPError: HTTP 000 CONNECTION FAILED for url <https://conda.anaconda.org/nvidia/win-64/libcusparse-dev-11.7.5.86->
+Elapsed: -
+
+An HTTP error occurred when trying to retrieve this URL.
+HTTP errors are often intermittent, and a simple retry will get you on your way.
+
+CondaHTTPError: HTTP 000 CONNECTION FAILED for url <https://conda.anaconda.org/nvidia/win-64/libcusparse-dev-11.7.5.86->
+Elapsed: -
+
+An HTTP error occurred when trying to retrieve this URL.
+HTTP errors are often intermittent, and a simple retry will get you on your way.
+
+
+
+(mlagents) E:\Unity-ML-Agents\AI-Parking-Unity-main\Parking Environment>conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia
+Channels:
+ - pytorch
+ - nvidia
+ - defaults
+Platform: win-64
+Collecting package metadata (repodata.json): done
+Solving environment: done
+
+## Package Plan ##
+
+  environment location: D:\Anaconda3_2024\envs\mlagents
+
+  added / updated specs:
+    - pytorch
+    - pytorch-cuda=11.8
+    - torchaudio
+    - torchvision
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    blas-1.0                   |              mkl           6 KB
+    brotli-python-1.0.9        |   py38hd77b12b_8         347 KB
+    certifi-2024.8.30          |   py38haa95532_0         163 KB
+    charset-normalizer-3.3.2   |     pyhd3eb1b0_0          44 KB
+    cuda-cccl-12.6.37          |                0          16 KB  nvidia
+    cuda-cccl_win-64-12.6.37   |                0         1.3 MB  nvidia
+    cuda-cudart-11.8.89        |                0         1.4 MB  nvidia
+    cuda-cudart-dev-11.8.89    |                0         723 KB  nvidia
+    cuda-cupti-11.8.87         |                0        11.5 MB  nvidia
+    cuda-libraries-11.8.0      |                0           1 KB  nvidia
+    cuda-libraries-dev-11.8.0  |                0           1 KB  nvidia
+    cuda-nvrtc-11.8.89         |                0        72.1 MB  nvidia
+    cuda-nvrtc-dev-11.8.89     |                0        16.1 MB  nvidia
+    cuda-nvtx-11.8.86          |                0          43 KB  nvidia
+    cuda-profiler-api-12.6.68  |                0          19 KB  nvidia
+    cuda-runtime-11.8.0        |                0           1 KB  nvidia
+    cuda-version-12.6          |                3          16 KB  nvidia
+    filelock-3.13.1            |   py38haa95532_0          21 KB
+    freetype-2.12.1            |       ha860e81_0         490 KB
+    gmpy2-2.1.2                |   py38h7f96b67_0         160 KB
+    idna-3.7                   |   py38haa95532_0         115 KB
+    intel-openmp-2023.1.0      |   h59b6b97_46320         2.7 MB
+    jinja2-3.1.4               |   py38haa95532_0         271 KB
+    jpeg-9e                    |       h827c3e9_3         334 KB
+    lcms2-2.12                 |       h83e58a3_0         454 KB
+    lerc-3.0                   |       hd77b12b_0         120 KB
+    libcublas-11.11.3.6        |                0          33 KB  nvidia
+    libcublas-dev-11.11.3.6    |                0       375.9 MB  nvidia
+    libcufft-10.9.0.58         |                0           6 KB  nvidia
+    libcurand-10.3.7.68        |                0        49.3 MB  nvidia
+    libcurand-dev-10.3.7.68    |                0         376 KB  nvidia
+    libcusolver-11.4.1.48      |                0          29 KB  nvidia
+    libcusolver-dev-11.4.1.48  |                0        94.1 MB  nvidia
+    libcusparse-11.7.5.86      |                0          13 KB  nvidia
+    libcusparse-dev-11.7.5.86  |                0       175.7 MB  nvidia
+    libdeflate-1.17            |       h2bbff1b_1         153 KB
+    libjpeg-turbo-2.0.0        |       h196d8e1_0         618 KB
+    libnpp-11.8.0.86           |                0         294 KB  nvidia
+    libnpp-dev-11.8.0.86       |                0       143.2 MB  nvidia
+    libnvjpeg-11.9.0.86        |                0           4 KB  nvidia
+    libnvjpeg-dev-11.9.0.86    |                0         1.9 MB  nvidia
+    libpng-1.6.39              |       h8cc25b3_0         369 KB
+    libtiff-4.5.1              |       hd77b12b_0         1.1 MB
+    libuv-1.48.0               |       h827c3e9_0         322 KB
+    libwebp-base-1.3.2         |       h2bbff1b_0         306 KB
+    lz4-c-1.9.4                |       h2bbff1b_1         152 KB
+    markupsafe-2.1.3           |   py38h2bbff1b_0          25 KB
+    mkl-2023.1.0               |   h6b88ed4_46358       155.9 MB
+    mkl-service-2.4.0          |   py38h2bbff1b_1          44 KB
+    mkl_fft-1.3.8              |   py38h2bbff1b_0         169 KB
+    mkl_random-1.2.4           |   py38h59b6b97_0         230 KB
+    mpc-1.1.0                  |       h7edee0f_1         260 KB
+    mpfr-4.0.2                 |       h62dcd97_1         1.5 MB
+    mpir-3.0.0                 |       hec2e145_1         1.3 MB
+    mpmath-1.3.0               |   py38haa95532_0         832 KB
+    networkx-3.1               |   py38haa95532_0         2.7 MB
+    numpy-1.24.3               |   py38h79a8e48_1          11 KB
+    numpy-base-1.24.3          |   py38h8a87ada_1         5.1 MB
+    openjpeg-2.5.2             |       hae555c5_0         268 KB
+    pillow-10.4.0              |   py38h827c3e9_0         851 KB
+    pysocks-1.7.1              |   py38haa95532_0          31 KB
+    pytorch-2.4.1              |py3.8_cuda11.8_cudnn9_0        1.38 GB  pytorch
+    pytorch-cuda-11.8          |       h24eeafa_5           4 KB  pytorch
+    pytorch-mutex-1.0          |             cuda           3 KB  pytorch
+    pyyaml-6.0.1               |   py38h2bbff1b_0         160 KB
+    requests-2.32.3            |   py38haa95532_0         100 KB
+    sympy-1.13.2               |   py38haa95532_0        11.3 MB
+    tbb-2021.8.0               |       h59b6b97_0         149 KB
+    torchaudio-2.4.1           |       py38_cu118         7.0 MB  pytorch
+    torchvision-0.19.1         |       py38_cu118         7.7 MB  pytorch
+    typing_extensions-4.11.0   |   py38haa95532_0          61 KB
+    urllib3-2.2.2              |   py38haa95532_0         178 KB
+    win_inet_pton-1.1.0        |   py38haa95532_0          35 KB
+    xz-5.4.6                   |       h8cc25b3_1         609 KB
+    yaml-0.2.5                 |       he774522_0          62 KB
+    zlib-1.2.13                |       h8cc25b3_1         131 KB
+    zstd-1.5.5                 |       hd43e919_2         720 KB
+    ------------------------------------------------------------
+                                           Total:        2.50 GB
+
+The following NEW packages will be INSTALLED:
+
+  blas               pkgs/main/win-64::blas-1.0-mkl
+  brotli-python      pkgs/main/win-64::brotli-python-1.0.9-py38hd77b12b_8
+  certifi            pkgs/main/win-64::certifi-2024.8.30-py38haa95532_0
+  charset-normalizer pkgs/main/noarch::charset-normalizer-3.3.2-pyhd3eb1b0_0
+  cuda-cccl          nvidia/win-64::cuda-cccl-12.6.37-0
+  cuda-cccl_win-64   nvidia/noarch::cuda-cccl_win-64-12.6.37-0
+  cuda-cudart        nvidia/win-64::cuda-cudart-11.8.89-0
+  cuda-cudart-dev    nvidia/win-64::cuda-cudart-dev-11.8.89-0
+  cuda-cupti         nvidia/win-64::cuda-cupti-11.8.87-0
+  cuda-libraries     nvidia/win-64::cuda-libraries-11.8.0-0
+  cuda-libraries-dev nvidia/win-64::cuda-libraries-dev-11.8.0-0
+  cuda-nvrtc         nvidia/win-64::cuda-nvrtc-11.8.89-0
+  cuda-nvrtc-dev     nvidia/win-64::cuda-nvrtc-dev-11.8.89-0
+  cuda-nvtx          nvidia/win-64::cuda-nvtx-11.8.86-0
+  cuda-profiler-api  nvidia/win-64::cuda-profiler-api-12.6.68-0
+  cuda-runtime       nvidia/win-64::cuda-runtime-11.8.0-0
+  cuda-version       nvidia/noarch::cuda-version-12.6-3
+  filelock           pkgs/main/win-64::filelock-3.13.1-py38haa95532_0
+  freetype           pkgs/main/win-64::freetype-2.12.1-ha860e81_0
+  gmpy2              pkgs/main/win-64::gmpy2-2.1.2-py38h7f96b67_0
+  idna               pkgs/main/win-64::idna-3.7-py38haa95532_0
+  intel-openmp       pkgs/main/win-64::intel-openmp-2023.1.0-h59b6b97_46320
+  jinja2             pkgs/main/win-64::jinja2-3.1.4-py38haa95532_0
+  jpeg               pkgs/main/win-64::jpeg-9e-h827c3e9_3
+  lcms2              pkgs/main/win-64::lcms2-2.12-h83e58a3_0
+  lerc               pkgs/main/win-64::lerc-3.0-hd77b12b_0
+  libcublas          nvidia/win-64::libcublas-11.11.3.6-0
+  libcublas-dev      nvidia/win-64::libcublas-dev-11.11.3.6-0
+  libcufft           nvidia/win-64::libcufft-10.9.0.58-0
+  libcufft-dev       nvidia/win-64::libcufft-dev-10.9.0.58-0
+  libcurand          nvidia/win-64::libcurand-10.3.7.68-0
+  libcurand-dev      nvidia/win-64::libcurand-dev-10.3.7.68-0
+  libcusolver        nvidia/win-64::libcusolver-11.4.1.48-0
+  libcusolver-dev    nvidia/win-64::libcusolver-dev-11.4.1.48-0
+  libcusparse        nvidia/win-64::libcusparse-11.7.5.86-0
+  libcusparse-dev    nvidia/win-64::libcusparse-dev-11.7.5.86-0
+  libdeflate         pkgs/main/win-64::libdeflate-1.17-h2bbff1b_1
+  libjpeg-turbo      pkgs/main/win-64::libjpeg-turbo-2.0.0-h196d8e1_0
+  libnpp             nvidia/win-64::libnpp-11.8.0.86-0
+  libnpp-dev         nvidia/win-64::libnpp-dev-11.8.0.86-0
+  libnvjpeg          nvidia/win-64::libnvjpeg-11.9.0.86-0
+  libnvjpeg-dev      nvidia/win-64::libnvjpeg-dev-11.9.0.86-0
+  libpng             pkgs/main/win-64::libpng-1.6.39-h8cc25b3_0
+  libtiff            pkgs/main/win-64::libtiff-4.5.1-hd77b12b_0
+  libuv              pkgs/main/win-64::libuv-1.48.0-h827c3e9_0
+  libwebp-base       pkgs/main/win-64::libwebp-base-1.3.2-h2bbff1b_0
+  lz4-c              pkgs/main/win-64::lz4-c-1.9.4-h2bbff1b_1
+  markupsafe         pkgs/main/win-64::markupsafe-2.1.3-py38h2bbff1b_0
+  mkl                pkgs/main/win-64::mkl-2023.1.0-h6b88ed4_46358
+  mkl-service        pkgs/main/win-64::mkl-service-2.4.0-py38h2bbff1b_1
+  mkl_fft            pkgs/main/win-64::mkl_fft-1.3.8-py38h2bbff1b_0
+  mkl_random         pkgs/main/win-64::mkl_random-1.2.4-py38h59b6b97_0
+  mpc                pkgs/main/win-64::mpc-1.1.0-h7edee0f_1
+  mpfr               pkgs/main/win-64::mpfr-4.0.2-h62dcd97_1
+  mpir               pkgs/main/win-64::mpir-3.0.0-hec2e145_1
+  mpmath             pkgs/main/win-64::mpmath-1.3.0-py38haa95532_0
+  networkx           pkgs/main/win-64::networkx-3.1-py38haa95532_0
+  numpy              pkgs/main/win-64::numpy-1.24.3-py38h79a8e48_1
+  numpy-base         pkgs/main/win-64::numpy-base-1.24.3-py38h8a87ada_1
+  openjpeg           pkgs/main/win-64::openjpeg-2.5.2-hae555c5_0
+  pillow             pkgs/main/win-64::pillow-10.4.0-py38h827c3e9_0
+  pysocks            pkgs/main/win-64::pysocks-1.7.1-py38haa95532_0
+  pytorch            pytorch/win-64::pytorch-2.4.1-py3.8_cuda11.8_cudnn9_0
+  pytorch-cuda       pytorch/win-64::pytorch-cuda-11.8-h24eeafa_5
+  pytorch-mutex      pytorch/noarch::pytorch-mutex-1.0-cuda
+  pyyaml             pkgs/main/win-64::pyyaml-6.0.1-py38h2bbff1b_0
+  requests           pkgs/main/win-64::requests-2.32.3-py38haa95532_0
+  sympy              pkgs/main/win-64::sympy-1.13.2-py38haa95532_0
+  tbb                pkgs/main/win-64::tbb-2021.8.0-h59b6b97_0
+  torchaudio         pytorch/win-64::torchaudio-2.4.1-py38_cu118
+  torchvision        pytorch/win-64::torchvision-0.19.1-py38_cu118
+  typing_extensions  pkgs/main/win-64::typing_extensions-4.11.0-py38haa95532_0
+  urllib3            pkgs/main/win-64::urllib3-2.2.2-py38haa95532_0
+  win_inet_pton      pkgs/main/win-64::win_inet_pton-1.1.0-py38haa95532_0
+  xz                 pkgs/main/win-64::xz-5.4.6-h8cc25b3_1
+  yaml               pkgs/main/win-64::yaml-0.2.5-he774522_0
+  zlib               pkgs/main/win-64::zlib-1.2.13-h8cc25b3_1
+  zstd               pkgs/main/win-64::zstd-1.5.5-hd43e919_2
+
+
+Proceed ([y]/n)? y
+
+
+Downloading and Extracting Packages:
+
+
+CondaHTTPError: HTTP 000 CONNECTION FAILED for url <https://conda.anaconda.org/nvidia/win-64/libnpp-dev-11.8.0.86-0.tar>
+Elapsed: -
+
+An HTTP error occurred when trying to retrieve this URL.
+HTTP errors are often intermittent, and a simple retry will get you on your way.
+
+CondaHTTPError: HTTP 000 CONNECTION FAILED for url <https://conda.anaconda.org/nvidia/win-64/libnpp-dev-11.8.0.86-0.tar>
+Elapsed: -
+
+An HTTP error occurred when trying to retrieve this URL.
+HTTP errors are often intermittent, and a simple retry will get you on your way.
+
+
+
+(mlagents) E:\Unity-ML-Agents\AI-Parking-Unity-main\Parking Environment>conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia
+Channels:
+ - pytorch
+ - nvidia
+ - defaults
+Platform: win-64
+Collecting package metadata (repodata.json): done
+Solving environment: done
+
+## Package Plan ##
+
+  environment location: D:\Anaconda3_2024\envs\mlagents
+
+  added / updated specs:
+    - pytorch
+    - pytorch-cuda=11.8
+    - torchaudio
+    - torchvision
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    blas-1.0                   |              mkl           6 KB
+    brotli-python-1.0.9        |   py38hd77b12b_8         347 KB
+    certifi-2024.8.30          |   py38haa95532_0         163 KB
+    charset-normalizer-3.3.2   |     pyhd3eb1b0_0          44 KB
+    cuda-cccl-12.6.37          |                0          16 KB  nvidia
+    cuda-cccl_win-64-12.6.37   |                0         1.3 MB  nvidia
+    cuda-cudart-11.8.89        |                0         1.4 MB  nvidia
+    cuda-cudart-dev-11.8.89    |                0         723 KB  nvidia
+    cuda-cupti-11.8.87         |                0        11.5 MB  nvidia
+    cuda-libraries-11.8.0      |                0           1 KB  nvidia
+    cuda-libraries-dev-11.8.0  |                0           1 KB  nvidia
+    cuda-nvrtc-dev-11.8.89     |                0        16.1 MB  nvidia
+    cuda-nvtx-11.8.86          |                0          43 KB  nvidia
+    cuda-profiler-api-12.6.68  |                0          19 KB  nvidia
+    cuda-runtime-11.8.0        |                0           1 KB  nvidia
+    cuda-version-12.6          |                3          16 KB  nvidia
+    filelock-3.13.1            |   py38haa95532_0          21 KB
+    freetype-2.12.1            |       ha860e81_0         490 KB
+    gmpy2-2.1.2                |   py38h7f96b67_0         160 KB
+    idna-3.7                   |   py38haa95532_0         115 KB
+    intel-openmp-2023.1.0      |   h59b6b97_46320         2.7 MB
+    jinja2-3.1.4               |   py38haa95532_0         271 KB
+    jpeg-9e                    |       h827c3e9_3         334 KB
+    lcms2-2.12                 |       h83e58a3_0         454 KB
+    lerc-3.0                   |       hd77b12b_0         120 KB
+    libcublas-11.11.3.6        |                0          33 KB  nvidia
+    libcublas-dev-11.11.3.6    |                0       375.9 MB  nvidia
+    libcufft-10.9.0.58         |                0           6 KB  nvidia
+    libcurand-10.3.7.68        |                0        49.3 MB  nvidia
+    libcurand-dev-10.3.7.68    |                0         376 KB  nvidia
+    libcusolver-11.4.1.48      |                0          29 KB  nvidia
+    libcusolver-dev-11.4.1.48  |                0        94.1 MB  nvidia
+    libcusparse-11.7.5.86      |                0          13 KB  nvidia
+    libdeflate-1.17            |       h2bbff1b_1         153 KB
+    libjpeg-turbo-2.0.0        |       h196d8e1_0         618 KB
+    libnpp-11.8.0.86           |                0         294 KB  nvidia
+    libnpp-dev-11.8.0.86       |                0       143.2 MB  nvidia
+    libnvjpeg-11.9.0.86        |                0           4 KB  nvidia
+    libnvjpeg-dev-11.9.0.86    |                0         1.9 MB  nvidia
+    libpng-1.6.39              |       h8cc25b3_0         369 KB
+    libtiff-4.5.1              |       hd77b12b_0         1.1 MB
+    libuv-1.48.0               |       h827c3e9_0         322 KB
+    libwebp-base-1.3.2         |       h2bbff1b_0         306 KB
+    lz4-c-1.9.4                |       h2bbff1b_1         152 KB
+    markupsafe-2.1.3           |   py38h2bbff1b_0          25 KB
+    mkl-service-2.4.0          |   py38h2bbff1b_1          44 KB
+    mkl_fft-1.3.8              |   py38h2bbff1b_0         169 KB
+    mkl_random-1.2.4           |   py38h59b6b97_0         230 KB
+    mpc-1.1.0                  |       h7edee0f_1         260 KB
+    mpfr-4.0.2                 |       h62dcd97_1         1.5 MB
+    mpir-3.0.0                 |       hec2e145_1         1.3 MB
+    mpmath-1.3.0               |   py38haa95532_0         832 KB
+    networkx-3.1               |   py38haa95532_0         2.7 MB
+    numpy-1.24.3               |   py38h79a8e48_1          11 KB
+    numpy-base-1.24.3          |   py38h8a87ada_1         5.1 MB
+    openjpeg-2.5.2             |       hae555c5_0         268 KB
+    pillow-10.4.0              |   py38h827c3e9_0         851 KB
+    pysocks-1.7.1              |   py38haa95532_0          31 KB
+    pytorch-2.4.1              |py3.8_cuda11.8_cudnn9_0        1.38 GB  pytorch
+    pytorch-cuda-11.8          |       h24eeafa_5           4 KB  pytorch
+    pytorch-mutex-1.0          |             cuda           3 KB  pytorch
+    pyyaml-6.0.1               |   py38h2bbff1b_0         160 KB
+    requests-2.32.3            |   py38haa95532_0         100 KB
+    sympy-1.13.2               |   py38haa95532_0        11.3 MB
+    tbb-2021.8.0               |       h59b6b97_0         149 KB
+    torchaudio-2.4.1           |       py38_cu118         7.0 MB  pytorch
+    torchvision-0.19.1         |       py38_cu118         7.7 MB  pytorch
+    typing_extensions-4.11.0   |   py38haa95532_0          61 KB
+    urllib3-2.2.2              |   py38haa95532_0         178 KB
+    win_inet_pton-1.1.0        |   py38haa95532_0          35 KB
+    xz-5.4.6                   |       h8cc25b3_1         609 KB
+    yaml-0.2.5                 |       he774522_0          62 KB
+    zlib-1.2.13                |       h8cc25b3_1         131 KB
+    zstd-1.5.5                 |       hd43e919_2         720 KB
+    ------------------------------------------------------------
+                                           Total:        2.11 GB
+
+The following NEW packages will be INSTALLED:
+
+  blas               pkgs/main/win-64::blas-1.0-mkl
+  brotli-python      pkgs/main/win-64::brotli-python-1.0.9-py38hd77b12b_8
+  certifi            pkgs/main/win-64::certifi-2024.8.30-py38haa95532_0
+  charset-normalizer pkgs/main/noarch::charset-normalizer-3.3.2-pyhd3eb1b0_0
+  cuda-cccl          nvidia/win-64::cuda-cccl-12.6.37-0
+  cuda-cccl_win-64   nvidia/noarch::cuda-cccl_win-64-12.6.37-0
+  cuda-cudart        nvidia/win-64::cuda-cudart-11.8.89-0
+  cuda-cudart-dev    nvidia/win-64::cuda-cudart-dev-11.8.89-0
+  cuda-cupti         nvidia/win-64::cuda-cupti-11.8.87-0
+  cuda-libraries     nvidia/win-64::cuda-libraries-11.8.0-0
+  cuda-libraries-dev nvidia/win-64::cuda-libraries-dev-11.8.0-0
+  cuda-nvrtc         nvidia/win-64::cuda-nvrtc-11.8.89-0
+  cuda-nvrtc-dev     nvidia/win-64::cuda-nvrtc-dev-11.8.89-0
+  cuda-nvtx          nvidia/win-64::cuda-nvtx-11.8.86-0
+  cuda-profiler-api  nvidia/win-64::cuda-profiler-api-12.6.68-0
+  cuda-runtime       nvidia/win-64::cuda-runtime-11.8.0-0
+  cuda-version       nvidia/noarch::cuda-version-12.6-3
+  filelock           pkgs/main/win-64::filelock-3.13.1-py38haa95532_0
+  freetype           pkgs/main/win-64::freetype-2.12.1-ha860e81_0
+  gmpy2              pkgs/main/win-64::gmpy2-2.1.2-py38h7f96b67_0
+  idna               pkgs/main/win-64::idna-3.7-py38haa95532_0
+  intel-openmp       pkgs/main/win-64::intel-openmp-2023.1.0-h59b6b97_46320
+  jinja2             pkgs/main/win-64::jinja2-3.1.4-py38haa95532_0
+  jpeg               pkgs/main/win-64::jpeg-9e-h827c3e9_3
+  lcms2              pkgs/main/win-64::lcms2-2.12-h83e58a3_0
+  lerc               pkgs/main/win-64::lerc-3.0-hd77b12b_0
+  libcublas          nvidia/win-64::libcublas-11.11.3.6-0
+  libcublas-dev      nvidia/win-64::libcublas-dev-11.11.3.6-0
+  libcufft           nvidia/win-64::libcufft-10.9.0.58-0
+  libcufft-dev       nvidia/win-64::libcufft-dev-10.9.0.58-0
+  libcurand          nvidia/win-64::libcurand-10.3.7.68-0
+  libcurand-dev      nvidia/win-64::libcurand-dev-10.3.7.68-0
+  libcusolver        nvidia/win-64::libcusolver-11.4.1.48-0
+  libcusolver-dev    nvidia/win-64::libcusolver-dev-11.4.1.48-0
+  libcusparse        nvidia/win-64::libcusparse-11.7.5.86-0
+  libcusparse-dev    nvidia/win-64::libcusparse-dev-11.7.5.86-0
+  libdeflate         pkgs/main/win-64::libdeflate-1.17-h2bbff1b_1
+  libjpeg-turbo      pkgs/main/win-64::libjpeg-turbo-2.0.0-h196d8e1_0
+  libnpp             nvidia/win-64::libnpp-11.8.0.86-0
+  libnpp-dev         nvidia/win-64::libnpp-dev-11.8.0.86-0
+  libnvjpeg          nvidia/win-64::libnvjpeg-11.9.0.86-0
+  libnvjpeg-dev      nvidia/win-64::libnvjpeg-dev-11.9.0.86-0
+  libpng             pkgs/main/win-64::libpng-1.6.39-h8cc25b3_0
+  libtiff            pkgs/main/win-64::libtiff-4.5.1-hd77b12b_0
+  libuv              pkgs/main/win-64::libuv-1.48.0-h827c3e9_0
+  libwebp-base       pkgs/main/win-64::libwebp-base-1.3.2-h2bbff1b_0
+  lz4-c              pkgs/main/win-64::lz4-c-1.9.4-h2bbff1b_1
+  markupsafe         pkgs/main/win-64::markupsafe-2.1.3-py38h2bbff1b_0
+  mkl                pkgs/main/win-64::mkl-2023.1.0-h6b88ed4_46358
+  mkl-service        pkgs/main/win-64::mkl-service-2.4.0-py38h2bbff1b_1
+  mkl_fft            pkgs/main/win-64::mkl_fft-1.3.8-py38h2bbff1b_0
+  mkl_random         pkgs/main/win-64::mkl_random-1.2.4-py38h59b6b97_0
+  mpc                pkgs/main/win-64::mpc-1.1.0-h7edee0f_1
+  mpfr               pkgs/main/win-64::mpfr-4.0.2-h62dcd97_1
+  mpir               pkgs/main/win-64::mpir-3.0.0-hec2e145_1
+  mpmath             pkgs/main/win-64::mpmath-1.3.0-py38haa95532_0
+  networkx           pkgs/main/win-64::networkx-3.1-py38haa95532_0
+  numpy              pkgs/main/win-64::numpy-1.24.3-py38h79a8e48_1
+  numpy-base         pkgs/main/win-64::numpy-base-1.24.3-py38h8a87ada_1
+  openjpeg           pkgs/main/win-64::openjpeg-2.5.2-hae555c5_0
+  pillow             pkgs/main/win-64::pillow-10.4.0-py38h827c3e9_0
+  pysocks            pkgs/main/win-64::pysocks-1.7.1-py38haa95532_0
+  pytorch            pytorch/win-64::pytorch-2.4.1-py3.8_cuda11.8_cudnn9_0
+  pytorch-cuda       pytorch/win-64::pytorch-cuda-11.8-h24eeafa_5
+  pytorch-mutex      pytorch/noarch::pytorch-mutex-1.0-cuda
+  pyyaml             pkgs/main/win-64::pyyaml-6.0.1-py38h2bbff1b_0
+  requests           pkgs/main/win-64::requests-2.32.3-py38haa95532_0
+  sympy              pkgs/main/win-64::sympy-1.13.2-py38haa95532_0
+  tbb                pkgs/main/win-64::tbb-2021.8.0-h59b6b97_0
+  torchaudio         pytorch/win-64::torchaudio-2.4.1-py38_cu118
+  torchvision        pytorch/win-64::torchvision-0.19.1-py38_cu118
+  typing_extensions  pkgs/main/win-64::typing_extensions-4.11.0-py38haa95532_0
+  urllib3            pkgs/main/win-64::urllib3-2.2.2-py38haa95532_0
+  win_inet_pton      pkgs/main/win-64::win_inet_pton-1.1.0-py38haa95532_0
+  xz                 pkgs/main/win-64::xz-5.4.6-h8cc25b3_1
+  yaml               pkgs/main/win-64::yaml-0.2.5-he774522_0
+  zlib               pkgs/main/win-64::zlib-1.2.13-h8cc25b3_1
+  zstd               pkgs/main/win-64::zstd-1.5.5-hd43e919_2
+
+
+Proceed ([y]/n)? y
+
+
+Downloading and Extracting Packages:
+
+
+CondaHTTPError: HTTP 000 CONNECTION FAILED for url <https://conda.anaconda.org/pytorch/win-64/pytorch-2.4.1-py3.8_cuda1>
+Elapsed: -
+
+An HTTP error occurred when trying to retrieve this URL.
+HTTP errors are often intermittent, and a simple retry will get you on your way.
+
+CondaHTTPError: HTTP 000 CONNECTION FAILED for url <https://conda.anaconda.org/pytorch/win-64/pytorch-2.4.1-py3.8_cuda1>
+Elapsed: -
+
+An HTTP error occurred when trying to retrieve this URL.
+HTTP errors are often intermittent, and a simple retry will get you on your way.
+
+
+
+(mlagents) E:\Unity-ML-Agents\AI-Parking-Unity-main\Parking Environment>conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia
+Channels:
+ - pytorch
+ - nvidia
+ - defaults
+Platform: win-64
+Collecting package metadata (repodata.json): done
+Solving environment: done
+
+## Package Plan ##
+
+  environment location: D:\Anaconda3_2024\envs\mlagents
+
+  added / updated specs:
+    - pytorch
+    - pytorch-cuda=11.8
+    - torchaudio
+    - torchvision
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    pytorch-2.4.1              |py3.8_cuda11.8_cudnn9_0        1.38 GB  pytorch
+    ------------------------------------------------------------
+                                           Total:        1.38 GB
+
+The following NEW packages will be INSTALLED:
+
+  blas               pkgs/main/win-64::blas-1.0-mkl
+  brotli-python      pkgs/main/win-64::brotli-python-1.0.9-py38hd77b12b_8
+  certifi            pkgs/main/win-64::certifi-2024.8.30-py38haa95532_0
+  charset-normalizer pkgs/main/noarch::charset-normalizer-3.3.2-pyhd3eb1b0_0
+  cuda-cccl          nvidia/win-64::cuda-cccl-12.6.37-0
+  cuda-cccl_win-64   nvidia/noarch::cuda-cccl_win-64-12.6.37-0
+  cuda-cudart        nvidia/win-64::cuda-cudart-11.8.89-0
+  cuda-cudart-dev    nvidia/win-64::cuda-cudart-dev-11.8.89-0
+  cuda-cupti         nvidia/win-64::cuda-cupti-11.8.87-0
+  cuda-libraries     nvidia/win-64::cuda-libraries-11.8.0-0
+  cuda-libraries-dev nvidia/win-64::cuda-libraries-dev-11.8.0-0
+  cuda-nvrtc         nvidia/win-64::cuda-nvrtc-11.8.89-0
+  cuda-nvrtc-dev     nvidia/win-64::cuda-nvrtc-dev-11.8.89-0
+  cuda-nvtx          nvidia/win-64::cuda-nvtx-11.8.86-0
+  cuda-profiler-api  nvidia/win-64::cuda-profiler-api-12.6.68-0
+  cuda-runtime       nvidia/win-64::cuda-runtime-11.8.0-0
+  cuda-version       nvidia/noarch::cuda-version-12.6-3
+  filelock           pkgs/main/win-64::filelock-3.13.1-py38haa95532_0
+  freetype           pkgs/main/win-64::freetype-2.12.1-ha860e81_0
+  gmpy2              pkgs/main/win-64::gmpy2-2.1.2-py38h7f96b67_0
+  idna               pkgs/main/win-64::idna-3.7-py38haa95532_0
+  intel-openmp       pkgs/main/win-64::intel-openmp-2023.1.0-h59b6b97_46320
+  jinja2             pkgs/main/win-64::jinja2-3.1.4-py38haa95532_0
+  jpeg               pkgs/main/win-64::jpeg-9e-h827c3e9_3
+  lcms2              pkgs/main/win-64::lcms2-2.12-h83e58a3_0
+  lerc               pkgs/main/win-64::lerc-3.0-hd77b12b_0
+  libcublas          nvidia/win-64::libcublas-11.11.3.6-0
+  libcublas-dev      nvidia/win-64::libcublas-dev-11.11.3.6-0
+  libcufft           nvidia/win-64::libcufft-10.9.0.58-0
+  libcufft-dev       nvidia/win-64::libcufft-dev-10.9.0.58-0
+  libcurand          nvidia/win-64::libcurand-10.3.7.68-0
+  libcurand-dev      nvidia/win-64::libcurand-dev-10.3.7.68-0
+  libcusolver        nvidia/win-64::libcusolver-11.4.1.48-0
+  libcusolver-dev    nvidia/win-64::libcusolver-dev-11.4.1.48-0
+  libcusparse        nvidia/win-64::libcusparse-11.7.5.86-0
+  libcusparse-dev    nvidia/win-64::libcusparse-dev-11.7.5.86-0
+  libdeflate         pkgs/main/win-64::libdeflate-1.17-h2bbff1b_1
+  libjpeg-turbo      pkgs/main/win-64::libjpeg-turbo-2.0.0-h196d8e1_0
+  libnpp             nvidia/win-64::libnpp-11.8.0.86-0
+  libnpp-dev         nvidia/win-64::libnpp-dev-11.8.0.86-0
+  libnvjpeg          nvidia/win-64::libnvjpeg-11.9.0.86-0
+  libnvjpeg-dev      nvidia/win-64::libnvjpeg-dev-11.9.0.86-0
+  libpng             pkgs/main/win-64::libpng-1.6.39-h8cc25b3_0
+  libtiff            pkgs/main/win-64::libtiff-4.5.1-hd77b12b_0
+  libuv              pkgs/main/win-64::libuv-1.48.0-h827c3e9_0
+  libwebp-base       pkgs/main/win-64::libwebp-base-1.3.2-h2bbff1b_0
+  lz4-c              pkgs/main/win-64::lz4-c-1.9.4-h2bbff1b_1
+  markupsafe         pkgs/main/win-64::markupsafe-2.1.3-py38h2bbff1b_0
+  mkl                pkgs/main/win-64::mkl-2023.1.0-h6b88ed4_46358
+  mkl-service        pkgs/main/win-64::mkl-service-2.4.0-py38h2bbff1b_1
+  mkl_fft            pkgs/main/win-64::mkl_fft-1.3.8-py38h2bbff1b_0
+  mkl_random         pkgs/main/win-64::mkl_random-1.2.4-py38h59b6b97_0
+  mpc                pkgs/main/win-64::mpc-1.1.0-h7edee0f_1
+  mpfr               pkgs/main/win-64::mpfr-4.0.2-h62dcd97_1
+  mpir               pkgs/main/win-64::mpir-3.0.0-hec2e145_1
+  mpmath             pkgs/main/win-64::mpmath-1.3.0-py38haa95532_0
+  networkx           pkgs/main/win-64::networkx-3.1-py38haa95532_0
+  numpy              pkgs/main/win-64::numpy-1.24.3-py38h79a8e48_1
+  numpy-base         pkgs/main/win-64::numpy-base-1.24.3-py38h8a87ada_1
+  openjpeg           pkgs/main/win-64::openjpeg-2.5.2-hae555c5_0
+  pillow             pkgs/main/win-64::pillow-10.4.0-py38h827c3e9_0
+  pysocks            pkgs/main/win-64::pysocks-1.7.1-py38haa95532_0
+  pytorch            pytorch/win-64::pytorch-2.4.1-py3.8_cuda11.8_cudnn9_0
+  pytorch-cuda       pytorch/win-64::pytorch-cuda-11.8-h24eeafa_5
+  pytorch-mutex      pytorch/noarch::pytorch-mutex-1.0-cuda
+  pyyaml             pkgs/main/win-64::pyyaml-6.0.1-py38h2bbff1b_0
+  requests           pkgs/main/win-64::requests-2.32.3-py38haa95532_0
+  sympy              pkgs/main/win-64::sympy-1.13.2-py38haa95532_0
+  tbb                pkgs/main/win-64::tbb-2021.8.0-h59b6b97_0
+  torchaudio         pytorch/win-64::torchaudio-2.4.1-py38_cu118
+  torchvision        pytorch/win-64::torchvision-0.19.1-py38_cu118
+  typing_extensions  pkgs/main/win-64::typing_extensions-4.11.0-py38haa95532_0
+  urllib3            pkgs/main/win-64::urllib3-2.2.2-py38haa95532_0
+  win_inet_pton      pkgs/main/win-64::win_inet_pton-1.1.0-py38haa95532_0
+  xz                 pkgs/main/win-64::xz-5.4.6-h8cc25b3_1
+  yaml               pkgs/main/win-64::yaml-0.2.5-he774522_0
+  zlib               pkgs/main/win-64::zlib-1.2.13-h8cc25b3_1
+  zstd               pkgs/main/win-64::zstd-1.5.5-hd43e919_2
+
+
+Proceed ([y]/n)? y
+
+
+Downloading and Extracting Packages:
+
+
+('Connection broken: IncompleteRead(363202884 bytes read, 196021770 more expected)', IncompleteRead(363202884 bytes rea)
+('Connection broken: IncompleteRead(363202884 bytes read, 196021770 more expected)', IncompleteRead(363202884 bytes rea)
+
+
+(mlagents) E:\Unity-ML-Agents\AI-Parking-Unity-main\Parking Environment>conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia
+Channels:
+ - pytorch
+ - nvidia
+ - defaults
+Platform: win-64
+Collecting package metadata (repodata.json): done
+Solving environment: done
+
+## Package Plan ##
+
+  environment location: D:\Anaconda3_2024\envs\mlagents
+
+  added / updated specs:
+    - pytorch
+    - pytorch-cuda=11.8
+    - torchaudio
+    - torchvision
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    pytorch-2.4.1              |py3.8_cuda11.8_cudnn9_0        1.38 GB  pytorch
+    ------------------------------------------------------------
+                                           Total:        1.38 GB
+
+The following NEW packages will be INSTALLED:
+
+  blas               pkgs/main/win-64::blas-1.0-mkl
+  brotli-python      pkgs/main/win-64::brotli-python-1.0.9-py38hd77b12b_8
+  certifi            pkgs/main/win-64::certifi-2024.8.30-py38haa95532_0
+  charset-normalizer pkgs/main/noarch::charset-normalizer-3.3.2-pyhd3eb1b0_0
+  cuda-cccl          nvidia/win-64::cuda-cccl-12.6.37-0
+  cuda-cccl_win-64   nvidia/noarch::cuda-cccl_win-64-12.6.37-0
+  cuda-cudart        nvidia/win-64::cuda-cudart-11.8.89-0
+  cuda-cudart-dev    nvidia/win-64::cuda-cudart-dev-11.8.89-0
+  cuda-cupti         nvidia/win-64::cuda-cupti-11.8.87-0
+  cuda-libraries     nvidia/win-64::cuda-libraries-11.8.0-0
+  cuda-libraries-dev nvidia/win-64::cuda-libraries-dev-11.8.0-0
+  cuda-nvrtc         nvidia/win-64::cuda-nvrtc-11.8.89-0
+  cuda-nvrtc-dev     nvidia/win-64::cuda-nvrtc-dev-11.8.89-0
+  cuda-nvtx          nvidia/win-64::cuda-nvtx-11.8.86-0
+  cuda-profiler-api  nvidia/win-64::cuda-profiler-api-12.6.68-0
+  cuda-runtime       nvidia/win-64::cuda-runtime-11.8.0-0
+  cuda-version       nvidia/noarch::cuda-version-12.6-3
+  filelock           pkgs/main/win-64::filelock-3.13.1-py38haa95532_0
+  freetype           pkgs/main/win-64::freetype-2.12.1-ha860e81_0
+  gmpy2              pkgs/main/win-64::gmpy2-2.1.2-py38h7f96b67_0
+  idna               pkgs/main/win-64::idna-3.7-py38haa95532_0
+  intel-openmp       pkgs/main/win-64::intel-openmp-2023.1.0-h59b6b97_46320
+  jinja2             pkgs/main/win-64::jinja2-3.1.4-py38haa95532_0
+  jpeg               pkgs/main/win-64::jpeg-9e-h827c3e9_3
+  lcms2              pkgs/main/win-64::lcms2-2.12-h83e58a3_0
+  lerc               pkgs/main/win-64::lerc-3.0-hd77b12b_0
+  libcublas          nvidia/win-64::libcublas-11.11.3.6-0
+  libcublas-dev      nvidia/win-64::libcublas-dev-11.11.3.6-0
+  libcufft           nvidia/win-64::libcufft-10.9.0.58-0
+  libcufft-dev       nvidia/win-64::libcufft-dev-10.9.0.58-0
+  libcurand          nvidia/win-64::libcurand-10.3.7.68-0
+  libcurand-dev      nvidia/win-64::libcurand-dev-10.3.7.68-0
+  libcusolver        nvidia/win-64::libcusolver-11.4.1.48-0
+  libcusolver-dev    nvidia/win-64::libcusolver-dev-11.4.1.48-0
+  libcusparse        nvidia/win-64::libcusparse-11.7.5.86-0
+  libcusparse-dev    nvidia/win-64::libcusparse-dev-11.7.5.86-0
+  libdeflate         pkgs/main/win-64::libdeflate-1.17-h2bbff1b_1
+  libjpeg-turbo      pkgs/main/win-64::libjpeg-turbo-2.0.0-h196d8e1_0
+  libnpp             nvidia/win-64::libnpp-11.8.0.86-0
+  libnpp-dev         nvidia/win-64::libnpp-dev-11.8.0.86-0
+  libnvjpeg          nvidia/win-64::libnvjpeg-11.9.0.86-0
+  libnvjpeg-dev      nvidia/win-64::libnvjpeg-dev-11.9.0.86-0
+  libpng             pkgs/main/win-64::libpng-1.6.39-h8cc25b3_0
+  libtiff            pkgs/main/win-64::libtiff-4.5.1-hd77b12b_0
+  libuv              pkgs/main/win-64::libuv-1.48.0-h827c3e9_0
+  libwebp-base       pkgs/main/win-64::libwebp-base-1.3.2-h2bbff1b_0
+  lz4-c              pkgs/main/win-64::lz4-c-1.9.4-h2bbff1b_1
+  markupsafe         pkgs/main/win-64::markupsafe-2.1.3-py38h2bbff1b_0
+  mkl                pkgs/main/win-64::mkl-2023.1.0-h6b88ed4_46358
+  mkl-service        pkgs/main/win-64::mkl-service-2.4.0-py38h2bbff1b_1
+  mkl_fft            pkgs/main/win-64::mkl_fft-1.3.8-py38h2bbff1b_0
+  mkl_random         pkgs/main/win-64::mkl_random-1.2.4-py38h59b6b97_0
+  mpc                pkgs/main/win-64::mpc-1.1.0-h7edee0f_1
+  mpfr               pkgs/main/win-64::mpfr-4.0.2-h62dcd97_1
+  mpir               pkgs/main/win-64::mpir-3.0.0-hec2e145_1
+  mpmath             pkgs/main/win-64::mpmath-1.3.0-py38haa95532_0
+  networkx           pkgs/main/win-64::networkx-3.1-py38haa95532_0
+  numpy              pkgs/main/win-64::numpy-1.24.3-py38h79a8e48_1
+  numpy-base         pkgs/main/win-64::numpy-base-1.24.3-py38h8a87ada_1
+  openjpeg           pkgs/main/win-64::openjpeg-2.5.2-hae555c5_0
+  pillow             pkgs/main/win-64::pillow-10.4.0-py38h827c3e9_0
+  pysocks            pkgs/main/win-64::pysocks-1.7.1-py38haa95532_0
+  pytorch            pytorch/win-64::pytorch-2.4.1-py3.8_cuda11.8_cudnn9_0
+  pytorch-cuda       pytorch/win-64::pytorch-cuda-11.8-h24eeafa_5
+  pytorch-mutex      pytorch/noarch::pytorch-mutex-1.0-cuda
+  pyyaml             pkgs/main/win-64::pyyaml-6.0.1-py38h2bbff1b_0
+  requests           pkgs/main/win-64::requests-2.32.3-py38haa95532_0
+  sympy              pkgs/main/win-64::sympy-1.13.2-py38haa95532_0
+  tbb                pkgs/main/win-64::tbb-2021.8.0-h59b6b97_0
+  torchaudio         pytorch/win-64::torchaudio-2.4.1-py38_cu118
+  torchvision        pytorch/win-64::torchvision-0.19.1-py38_cu118
+  typing_extensions  pkgs/main/win-64::typing_extensions-4.11.0-py38haa95532_0
+  urllib3            pkgs/main/win-64::urllib3-2.2.2-py38haa95532_0
+  win_inet_pton      pkgs/main/win-64::win_inet_pton-1.1.0-py38haa95532_0
+  xz                 pkgs/main/win-64::xz-5.4.6-h8cc25b3_1
+  yaml               pkgs/main/win-64::yaml-0.2.5-he774522_0
+  zlib               pkgs/main/win-64::zlib-1.2.13-h8cc25b3_1
+  zstd               pkgs/main/win-64::zstd-1.5.5-hd43e919_2
+
+
+Proceed ([y]/n)? y
+
+
+Downloading and Extracting Packages:
+
+
+('Connection broken: IncompleteRead(62204240 bytes read, 133819902 more expected)', IncompleteRead(62204240 bytes read,)
+('Connection broken: IncompleteRead(62204240 bytes read, 133819902 more expected)', IncompleteRead(62204240 bytes read,)
+
+
+(mlagents) E:\Unity-ML-Agents\AI-Parking-Unity-main\Parking Environment>conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia
+Channels:
+ - pytorch
+ - nvidia
+ - defaults
+Platform: win-64
+Collecting package metadata (repodata.json): done
+Solving environment: done
+
+## Package Plan ##
+
+  environment location: D:\Anaconda3_2024\envs\mlagents
+
+  added / updated specs:
+    - pytorch
+    - pytorch-cuda=11.8
+    - torchaudio
+    - torchvision
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    pytorch-2.4.1              |py3.8_cuda11.8_cudnn9_0        1.38 GB  pytorch
+    ------------------------------------------------------------
+                                           Total:        1.38 GB
+
+The following NEW packages will be INSTALLED:
+
+  blas               pkgs/main/win-64::blas-1.0-mkl
+  brotli-python      pkgs/main/win-64::brotli-python-1.0.9-py38hd77b12b_8
+  certifi            pkgs/main/win-64::certifi-2024.8.30-py38haa95532_0
+  charset-normalizer pkgs/main/noarch::charset-normalizer-3.3.2-pyhd3eb1b0_0
+  cuda-cccl          nvidia/win-64::cuda-cccl-12.6.37-0
+  cuda-cccl_win-64   nvidia/noarch::cuda-cccl_win-64-12.6.37-0
+  cuda-cudart        nvidia/win-64::cuda-cudart-11.8.89-0
+  cuda-cudart-dev    nvidia/win-64::cuda-cudart-dev-11.8.89-0
+  cuda-cupti         nvidia/win-64::cuda-cupti-11.8.87-0
+  cuda-libraries     nvidia/win-64::cuda-libraries-11.8.0-0
+  cuda-libraries-dev nvidia/win-64::cuda-libraries-dev-11.8.0-0
+  cuda-nvrtc         nvidia/win-64::cuda-nvrtc-11.8.89-0
+  cuda-nvrtc-dev     nvidia/win-64::cuda-nvrtc-dev-11.8.89-0
+  cuda-nvtx          nvidia/win-64::cuda-nvtx-11.8.86-0
+  cuda-profiler-api  nvidia/win-64::cuda-profiler-api-12.6.68-0
+  cuda-runtime       nvidia/win-64::cuda-runtime-11.8.0-0
+  cuda-version       nvidia/noarch::cuda-version-12.6-3
+  filelock           pkgs/main/win-64::filelock-3.13.1-py38haa95532_0
+  freetype           pkgs/main/win-64::freetype-2.12.1-ha860e81_0
+  gmpy2              pkgs/main/win-64::gmpy2-2.1.2-py38h7f96b67_0
+  idna               pkgs/main/win-64::idna-3.7-py38haa95532_0
+  intel-openmp       pkgs/main/win-64::intel-openmp-2023.1.0-h59b6b97_46320
+  jinja2             pkgs/main/win-64::jinja2-3.1.4-py38haa95532_0
+  jpeg               pkgs/main/win-64::jpeg-9e-h827c3e9_3
+  lcms2              pkgs/main/win-64::lcms2-2.12-h83e58a3_0
+  lerc               pkgs/main/win-64::lerc-3.0-hd77b12b_0
+  libcublas          nvidia/win-64::libcublas-11.11.3.6-0
+  libcublas-dev      nvidia/win-64::libcublas-dev-11.11.3.6-0
+  libcufft           nvidia/win-64::libcufft-10.9.0.58-0
+  libcufft-dev       nvidia/win-64::libcufft-dev-10.9.0.58-0
+  libcurand          nvidia/win-64::libcurand-10.3.7.68-0
+  libcurand-dev      nvidia/win-64::libcurand-dev-10.3.7.68-0
+  libcusolver        nvidia/win-64::libcusolver-11.4.1.48-0
+  libcusolver-dev    nvidia/win-64::libcusolver-dev-11.4.1.48-0
+  libcusparse        nvidia/win-64::libcusparse-11.7.5.86-0
+  libcusparse-dev    nvidia/win-64::libcusparse-dev-11.7.5.86-0
+  libdeflate         pkgs/main/win-64::libdeflate-1.17-h2bbff1b_1
+  libjpeg-turbo      pkgs/main/win-64::libjpeg-turbo-2.0.0-h196d8e1_0
+  libnpp             nvidia/win-64::libnpp-11.8.0.86-0
+  libnpp-dev         nvidia/win-64::libnpp-dev-11.8.0.86-0
+  libnvjpeg          nvidia/win-64::libnvjpeg-11.9.0.86-0
+  libnvjpeg-dev      nvidia/win-64::libnvjpeg-dev-11.9.0.86-0
+  libpng             pkgs/main/win-64::libpng-1.6.39-h8cc25b3_0
+  libtiff            pkgs/main/win-64::libtiff-4.5.1-hd77b12b_0
+  libuv              pkgs/main/win-64::libuv-1.48.0-h827c3e9_0
+  libwebp-base       pkgs/main/win-64::libwebp-base-1.3.2-h2bbff1b_0
+  lz4-c              pkgs/main/win-64::lz4-c-1.9.4-h2bbff1b_1
+  markupsafe         pkgs/main/win-64::markupsafe-2.1.3-py38h2bbff1b_0
+  mkl                pkgs/main/win-64::mkl-2023.1.0-h6b88ed4_46358
+  mkl-service        pkgs/main/win-64::mkl-service-2.4.0-py38h2bbff1b_1
+  mkl_fft            pkgs/main/win-64::mkl_fft-1.3.8-py38h2bbff1b_0
+  mkl_random         pkgs/main/win-64::mkl_random-1.2.4-py38h59b6b97_0
+  mpc                pkgs/main/win-64::mpc-1.1.0-h7edee0f_1
+  mpfr               pkgs/main/win-64::mpfr-4.0.2-h62dcd97_1
+  mpir               pkgs/main/win-64::mpir-3.0.0-hec2e145_1
+  mpmath             pkgs/main/win-64::mpmath-1.3.0-py38haa95532_0
+  networkx           pkgs/main/win-64::networkx-3.1-py38haa95532_0
+  numpy              pkgs/main/win-64::numpy-1.24.3-py38h79a8e48_1
+  numpy-base         pkgs/main/win-64::numpy-base-1.24.3-py38h8a87ada_1
+  openjpeg           pkgs/main/win-64::openjpeg-2.5.2-hae555c5_0
+  pillow             pkgs/main/win-64::pillow-10.4.0-py38h827c3e9_0
+  pysocks            pkgs/main/win-64::pysocks-1.7.1-py38haa95532_0
+  pytorch            pytorch/win-64::pytorch-2.4.1-py3.8_cuda11.8_cudnn9_0
+  pytorch-cuda       pytorch/win-64::pytorch-cuda-11.8-h24eeafa_5
+  pytorch-mutex      pytorch/noarch::pytorch-mutex-1.0-cuda
+  pyyaml             pkgs/main/win-64::pyyaml-6.0.1-py38h2bbff1b_0
+  requests           pkgs/main/win-64::requests-2.32.3-py38haa95532_0
+  sympy              pkgs/main/win-64::sympy-1.13.2-py38haa95532_0
+  tbb                pkgs/main/win-64::tbb-2021.8.0-h59b6b97_0
+  torchaudio         pytorch/win-64::torchaudio-2.4.1-py38_cu118
+  torchvision        pytorch/win-64::torchvision-0.19.1-py38_cu118
+  typing_extensions  pkgs/main/win-64::typing_extensions-4.11.0-py38haa95532_0
+  urllib3            pkgs/main/win-64::urllib3-2.2.2-py38haa95532_0
+  win_inet_pton      pkgs/main/win-64::win_inet_pton-1.1.0-py38haa95532_0
+  xz                 pkgs/main/win-64::xz-5.4.6-h8cc25b3_1
+  yaml               pkgs/main/win-64::yaml-0.2.5-he774522_0
+  zlib               pkgs/main/win-64::zlib-1.2.13-h8cc25b3_1
+  zstd               pkgs/main/win-64::zstd-1.5.5-hd43e919_2
+
+
+Proceed ([y]/n)? y
+
+
+Downloading and Extracting Packages:
+
+
+('Connection broken: IncompleteRead(92318035 bytes read, 41512443 more expected)', IncompleteRead(92318035 bytes read, )
+('Connection broken: IncompleteRead(92318035 bytes read, 41512443 more expected)', IncompleteRead(92318035 bytes read, )
+
+
+(mlagents) E:\Unity-ML-Agents\AI-Parking-Unity-main\Parking Environment>conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia
+Channels:
+ - pytorch
+ - nvidia
+ - defaults
+Platform: win-64
+Collecting package metadata (repodata.json): done
+Solving environment: done
+
+## Package Plan ##
+
+  environment location: D:\Anaconda3_2024\envs\mlagents
+
+  added / updated specs:
+    - pytorch
+    - pytorch-cuda=11.8
+    - torchaudio
+    - torchvision
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    pytorch-2.4.1              |py3.8_cuda11.8_cudnn9_0        1.38 GB  pytorch
+    ------------------------------------------------------------
+                                           Total:        1.38 GB
+
+The following NEW packages will be INSTALLED:
+
+  blas               pkgs/main/win-64::blas-1.0-mkl
+  brotli-python      pkgs/main/win-64::brotli-python-1.0.9-py38hd77b12b_8
+  certifi            pkgs/main/win-64::certifi-2024.8.30-py38haa95532_0
+  charset-normalizer pkgs/main/noarch::charset-normalizer-3.3.2-pyhd3eb1b0_0
+  cuda-cccl          nvidia/win-64::cuda-cccl-12.6.37-0
+  cuda-cccl_win-64   nvidia/noarch::cuda-cccl_win-64-12.6.37-0
+  cuda-cudart        nvidia/win-64::cuda-cudart-11.8.89-0
+  cuda-cudart-dev    nvidia/win-64::cuda-cudart-dev-11.8.89-0
+  cuda-cupti         nvidia/win-64::cuda-cupti-11.8.87-0
+  cuda-libraries     nvidia/win-64::cuda-libraries-11.8.0-0
+  cuda-libraries-dev nvidia/win-64::cuda-libraries-dev-11.8.0-0
+  cuda-nvrtc         nvidia/win-64::cuda-nvrtc-11.8.89-0
+  cuda-nvrtc-dev     nvidia/win-64::cuda-nvrtc-dev-11.8.89-0
+  cuda-nvtx          nvidia/win-64::cuda-nvtx-11.8.86-0
+  cuda-profiler-api  nvidia/win-64::cuda-profiler-api-12.6.68-0
+  cuda-runtime       nvidia/win-64::cuda-runtime-11.8.0-0
+  cuda-version       nvidia/noarch::cuda-version-12.6-3
+  filelock           pkgs/main/win-64::filelock-3.13.1-py38haa95532_0
+  freetype           pkgs/main/win-64::freetype-2.12.1-ha860e81_0
+  gmpy2              pkgs/main/win-64::gmpy2-2.1.2-py38h7f96b67_0
+  idna               pkgs/main/win-64::idna-3.7-py38haa95532_0
+  intel-openmp       pkgs/main/win-64::intel-openmp-2023.1.0-h59b6b97_46320
+  jinja2             pkgs/main/win-64::jinja2-3.1.4-py38haa95532_0
+  jpeg               pkgs/main/win-64::jpeg-9e-h827c3e9_3
+  lcms2              pkgs/main/win-64::lcms2-2.12-h83e58a3_0
+  lerc               pkgs/main/win-64::lerc-3.0-hd77b12b_0
+  libcublas          nvidia/win-64::libcublas-11.11.3.6-0
+  libcublas-dev      nvidia/win-64::libcublas-dev-11.11.3.6-0
+  libcufft           nvidia/win-64::libcufft-10.9.0.58-0
+  libcufft-dev       nvidia/win-64::libcufft-dev-10.9.0.58-0
+  libcurand          nvidia/win-64::libcurand-10.3.7.68-0
+  libcurand-dev      nvidia/win-64::libcurand-dev-10.3.7.68-0
+  libcusolver        nvidia/win-64::libcusolver-11.4.1.48-0
+  libcusolver-dev    nvidia/win-64::libcusolver-dev-11.4.1.48-0
+  libcusparse        nvidia/win-64::libcusparse-11.7.5.86-0
+  libcusparse-dev    nvidia/win-64::libcusparse-dev-11.7.5.86-0
+  libdeflate         pkgs/main/win-64::libdeflate-1.17-h2bbff1b_1
+  libjpeg-turbo      pkgs/main/win-64::libjpeg-turbo-2.0.0-h196d8e1_0
+  libnpp             nvidia/win-64::libnpp-11.8.0.86-0
+  libnpp-dev         nvidia/win-64::libnpp-dev-11.8.0.86-0
+  libnvjpeg          nvidia/win-64::libnvjpeg-11.9.0.86-0
+  libnvjpeg-dev      nvidia/win-64::libnvjpeg-dev-11.9.0.86-0
+  libpng             pkgs/main/win-64::libpng-1.6.39-h8cc25b3_0
+  libtiff            pkgs/main/win-64::libtiff-4.5.1-hd77b12b_0
+  libuv              pkgs/main/win-64::libuv-1.48.0-h827c3e9_0
+  libwebp-base       pkgs/main/win-64::libwebp-base-1.3.2-h2bbff1b_0
+  lz4-c              pkgs/main/win-64::lz4-c-1.9.4-h2bbff1b_1
+  markupsafe         pkgs/main/win-64::markupsafe-2.1.3-py38h2bbff1b_0
+  mkl                pkgs/main/win-64::mkl-2023.1.0-h6b88ed4_46358
+  mkl-service        pkgs/main/win-64::mkl-service-2.4.0-py38h2bbff1b_1
+  mkl_fft            pkgs/main/win-64::mkl_fft-1.3.8-py38h2bbff1b_0
+  mkl_random         pkgs/main/win-64::mkl_random-1.2.4-py38h59b6b97_0
+  mpc                pkgs/main/win-64::mpc-1.1.0-h7edee0f_1
+  mpfr               pkgs/main/win-64::mpfr-4.0.2-h62dcd97_1
+  mpir               pkgs/main/win-64::mpir-3.0.0-hec2e145_1
+  mpmath             pkgs/main/win-64::mpmath-1.3.0-py38haa95532_0
+  networkx           pkgs/main/win-64::networkx-3.1-py38haa95532_0
+  numpy              pkgs/main/win-64::numpy-1.24.3-py38h79a8e48_1
+  numpy-base         pkgs/main/win-64::numpy-base-1.24.3-py38h8a87ada_1
+  openjpeg           pkgs/main/win-64::openjpeg-2.5.2-hae555c5_0
+  pillow             pkgs/main/win-64::pillow-10.4.0-py38h827c3e9_0
+  pysocks            pkgs/main/win-64::pysocks-1.7.1-py38haa95532_0
+  pytorch            pytorch/win-64::pytorch-2.4.1-py3.8_cuda11.8_cudnn9_0
+  pytorch-cuda       pytorch/win-64::pytorch-cuda-11.8-h24eeafa_5
+  pytorch-mutex      pytorch/noarch::pytorch-mutex-1.0-cuda
+  pyyaml             pkgs/main/win-64::pyyaml-6.0.1-py38h2bbff1b_0
+  requests           pkgs/main/win-64::requests-2.32.3-py38haa95532_0
+  sympy              pkgs/main/win-64::sympy-1.13.2-py38haa95532_0
+  tbb                pkgs/main/win-64::tbb-2021.8.0-h59b6b97_0
+  torchaudio         pytorch/win-64::torchaudio-2.4.1-py38_cu118
+  torchvision        pytorch/win-64::torchvision-0.19.1-py38_cu118
+  typing_extensions  pkgs/main/win-64::typing_extensions-4.11.0-py38haa95532_0
+  urllib3            pkgs/main/win-64::urllib3-2.2.2-py38haa95532_0
+  win_inet_pton      pkgs/main/win-64::win_inet_pton-1.1.0-py38haa95532_0
+  xz                 pkgs/main/win-64::xz-5.4.6-h8cc25b3_1
+  yaml               pkgs/main/win-64::yaml-0.2.5-he774522_0
+  zlib               pkgs/main/win-64::zlib-1.2.13-h8cc25b3_1
+  zstd               pkgs/main/win-64::zstd-1.5.5-hd43e919_2
+
+
+Proceed ([y]/n)? y
+
+
+Downloading and Extracting Packages:
+pytorch-2.4.1        | 1.38 GB   | ############################################################################ | 100%
+CondaSignalInterrupt: Signal interrupt SIGINT
+
+Terminate batch job (Y/N)? n
+
+(mlagents) E:\Unity-ML-Agents\AI-Parking-Unity-main\Parking Environment>conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia
+Channels:
+ - pytorch
+ - nvidia
+ - defaults
+Platform: win-64
+Collecting package metadata (repodata.json): done
+Solving environment: done
+
+## Package Plan ##
+
+  environment location: D:\Anaconda3_2024\envs\mlagents
+
+  added / updated specs:
+    - pytorch
+    - pytorch-cuda=11.8
+    - torchaudio
+    - torchvision
+
+
+The following NEW packages will be INSTALLED:
+
+  blas               pkgs/main/win-64::blas-1.0-mkl
+  brotli-python      pkgs/main/win-64::brotli-python-1.0.9-py38hd77b12b_8
+  certifi            pkgs/main/win-64::certifi-2024.8.30-py38haa95532_0
+  charset-normalizer pkgs/main/noarch::charset-normalizer-3.3.2-pyhd3eb1b0_0
+  cuda-cccl          nvidia/win-64::cuda-cccl-12.6.37-0
+  cuda-cccl_win-64   nvidia/noarch::cuda-cccl_win-64-12.6.37-0
+  cuda-cudart        nvidia/win-64::cuda-cudart-11.8.89-0
+  cuda-cudart-dev    nvidia/win-64::cuda-cudart-dev-11.8.89-0
+  cuda-cupti         nvidia/win-64::cuda-cupti-11.8.87-0
+  cuda-libraries     nvidia/win-64::cuda-libraries-11.8.0-0
+  cuda-libraries-dev nvidia/win-64::cuda-libraries-dev-11.8.0-0
+  cuda-nvrtc         nvidia/win-64::cuda-nvrtc-11.8.89-0
+  cuda-nvrtc-dev     nvidia/win-64::cuda-nvrtc-dev-11.8.89-0
+  cuda-nvtx          nvidia/win-64::cuda-nvtx-11.8.86-0
+  cuda-profiler-api  nvidia/win-64::cuda-profiler-api-12.6.68-0
+  cuda-runtime       nvidia/win-64::cuda-runtime-11.8.0-0
+  cuda-version       nvidia/noarch::cuda-version-12.6-3
+  filelock           pkgs/main/win-64::filelock-3.13.1-py38haa95532_0
+  freetype           pkgs/main/win-64::freetype-2.12.1-ha860e81_0
+  gmpy2              pkgs/main/win-64::gmpy2-2.1.2-py38h7f96b67_0
+  idna               pkgs/main/win-64::idna-3.7-py38haa95532_0
+  intel-openmp       pkgs/main/win-64::intel-openmp-2023.1.0-h59b6b97_46320
+  jinja2             pkgs/main/win-64::jinja2-3.1.4-py38haa95532_0
+  jpeg               pkgs/main/win-64::jpeg-9e-h827c3e9_3
+  lcms2              pkgs/main/win-64::lcms2-2.12-h83e58a3_0
+  lerc               pkgs/main/win-64::lerc-3.0-hd77b12b_0
+  libcublas          nvidia/win-64::libcublas-11.11.3.6-0
+  libcublas-dev      nvidia/win-64::libcublas-dev-11.11.3.6-0
+  libcufft           nvidia/win-64::libcufft-10.9.0.58-0
+  libcufft-dev       nvidia/win-64::libcufft-dev-10.9.0.58-0
+  libcurand          nvidia/win-64::libcurand-10.3.7.68-0
+  libcurand-dev      nvidia/win-64::libcurand-dev-10.3.7.68-0
+  libcusolver        nvidia/win-64::libcusolver-11.4.1.48-0
+  libcusolver-dev    nvidia/win-64::libcusolver-dev-11.4.1.48-0
+  libcusparse        nvidia/win-64::libcusparse-11.7.5.86-0
+  libcusparse-dev    nvidia/win-64::libcusparse-dev-11.7.5.86-0
+  libdeflate         pkgs/main/win-64::libdeflate-1.17-h2bbff1b_1
+  libjpeg-turbo      pkgs/main/win-64::libjpeg-turbo-2.0.0-h196d8e1_0
+  libnpp             nvidia/win-64::libnpp-11.8.0.86-0
+  libnpp-dev         nvidia/win-64::libnpp-dev-11.8.0.86-0
+  libnvjpeg          nvidia/win-64::libnvjpeg-11.9.0.86-0
+  libnvjpeg-dev      nvidia/win-64::libnvjpeg-dev-11.9.0.86-0
+  libpng             pkgs/main/win-64::libpng-1.6.39-h8cc25b3_0
+  libtiff            pkgs/main/win-64::libtiff-4.5.1-hd77b12b_0
+  libuv              pkgs/main/win-64::libuv-1.48.0-h827c3e9_0
+  libwebp-base       pkgs/main/win-64::libwebp-base-1.3.2-h2bbff1b_0
+  lz4-c              pkgs/main/win-64::lz4-c-1.9.4-h2bbff1b_1
+  markupsafe         pkgs/main/win-64::markupsafe-2.1.3-py38h2bbff1b_0
+  mkl                pkgs/main/win-64::mkl-2023.1.0-h6b88ed4_46358
+  mkl-service        pkgs/main/win-64::mkl-service-2.4.0-py38h2bbff1b_1
+  mkl_fft            pkgs/main/win-64::mkl_fft-1.3.8-py38h2bbff1b_0
+  mkl_random         pkgs/main/win-64::mkl_random-1.2.4-py38h59b6b97_0
+  mpc                pkgs/main/win-64::mpc-1.1.0-h7edee0f_1
+  mpfr               pkgs/main/win-64::mpfr-4.0.2-h62dcd97_1
+  mpir               pkgs/main/win-64::mpir-3.0.0-hec2e145_1
+  mpmath             pkgs/main/win-64::mpmath-1.3.0-py38haa95532_0
+  networkx           pkgs/main/win-64::networkx-3.1-py38haa95532_0
+  numpy              pkgs/main/win-64::numpy-1.24.3-py38h79a8e48_1
+  numpy-base         pkgs/main/win-64::numpy-base-1.24.3-py38h8a87ada_1
+  openjpeg           pkgs/main/win-64::openjpeg-2.5.2-hae555c5_0
+  pillow             pkgs/main/win-64::pillow-10.4.0-py38h827c3e9_0
+  pysocks            pkgs/main/win-64::pysocks-1.7.1-py38haa95532_0
+  pytorch            pytorch/win-64::pytorch-2.4.1-py3.8_cuda11.8_cudnn9_0
+  pytorch-cuda       pytorch/win-64::pytorch-cuda-11.8-h24eeafa_5
+  pytorch-mutex      pytorch/noarch::pytorch-mutex-1.0-cuda
+  pyyaml             pkgs/main/win-64::pyyaml-6.0.1-py38h2bbff1b_0
+  requests           pkgs/main/win-64::requests-2.32.3-py38haa95532_0
+  sympy              pkgs/main/win-64::sympy-1.13.2-py38haa95532_0
+  tbb                pkgs/main/win-64::tbb-2021.8.0-h59b6b97_0
+  torchaudio         pytorch/win-64::torchaudio-2.4.1-py38_cu118
+  torchvision        pytorch/win-64::torchvision-0.19.1-py38_cu118
+  typing_extensions  pkgs/main/win-64::typing_extensions-4.11.0-py38haa95532_0
+  urllib3            pkgs/main/win-64::urllib3-2.2.2-py38haa95532_0
+  win_inet_pton      pkgs/main/win-64::win_inet_pton-1.1.0-py38haa95532_0
+  xz                 pkgs/main/win-64::xz-5.4.6-h8cc25b3_1
+  yaml               pkgs/main/win-64::yaml-0.2.5-he774522_0
+  zlib               pkgs/main/win-64::zlib-1.2.13-h8cc25b3_1
+  zstd               pkgs/main/win-64::zstd-1.5.5-hd43e919_2
+
+
+Proceed ([y]/n)? y
+
+
+Downloading and Extracting Packages:
+
+Preparing transaction: done
+Executing transaction: done
+
+(mlagents) E:\Unity-ML-Agents\AI-Parking-Unity-main\Parking Environment>mlagents-learn
+Traceback (most recent call last):
+  File "D:\Anaconda3_2024\envs\mlagents\lib\runpy.py", line 194, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "D:\Anaconda3_2024\envs\mlagents\lib\runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "D:\Anaconda3_2024\envs\mlagents\Scripts\mlagents-learn.exe\__main__.py", line 4, in <module>
+  File "D:\Anaconda3_2024\envs\mlagents\lib\site-packages\mlagents\trainers\learn.py", line 2, in <module>
+    from mlagents import torch_utils
+  File "D:\Anaconda3_2024\envs\mlagents\lib\site-packages\mlagents\torch_utils\__init__.py", line 1, in <module>
+    from mlagents.torch_utils.torch import torch as torch  # noqa
+  File "D:\Anaconda3_2024\envs\mlagents\lib\site-packages\mlagents\torch_utils\torch.py", line 6, in <module>
+    from mlagents.trainers.settings import TorchSettings
+  File "D:\Anaconda3_2024\envs\mlagents\lib\site-packages\mlagents\trainers\settings.py", line 25, in <module>
+    from mlagents.trainers.cli_utils import StoreConfigFile, DetectDefault, parser
+  File "D:\Anaconda3_2024\envs\mlagents\lib\site-packages\mlagents\trainers\cli_utils.py", line 5, in <module>
+    from mlagents_envs.environment import UnityEnvironment
+  File "D:\Anaconda3_2024\envs\mlagents\lib\site-packages\mlagents_envs\environment.py", line 12, in <module>
+    from mlagents_envs.side_channel.side_channel import SideChannel
+  File "D:\Anaconda3_2024\envs\mlagents\lib\site-packages\mlagents_envs\side_channel\__init__.py", line 5, in <module>
+    from mlagents_envs.side_channel.default_training_analytics_side_channel import (  # noqa
+  File "D:\Anaconda3_2024\envs\mlagents\lib\site-packages\mlagents_envs\side_channel\default_training_analytics_side_channel.py", line 7, in <module>
+    from mlagents_envs.communicator_objects.training_analytics_pb2 import (
+  File "D:\Anaconda3_2024\envs\mlagents\lib\site-packages\mlagents_envs\communicator_objects\training_analytics_pb2.py", line 35, in <module>
+    _descriptor.FieldDescriptor(
+  File "D:\Anaconda3_2024\envs\mlagents\lib\site-packages\google\protobuf\descriptor.py", line 621, in __new__
+    _message.Message._CheckCalledFromGeneratedFile()
+TypeError: Descriptors cannot be created directly.
+If this call came from a _pb2.py file, your generated code is out of date and must be regenerated with protoc >= 3.19.0.
+If you cannot immediately regenerate your protos, some other possible workarounds are:
+ 1. Downgrade the protobuf package to 3.20.x or lower.
+ 2. Set PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python (but this will use pure-Python parsing and will be much slower).
+
+More information: https://developers.google.com/protocol-buffers/docs/news/2022-05-06#python-updates
+
+(mlagents) E:\Unity-ML-Agents\AI-Parking-Unity-main\Parking Environment>pip install protobuf==3.20.*
+Collecting protobuf==3.20.*
+  Downloading protobuf-3.20.3-cp38-cp38-win_amd64.whl.metadata (699 bytes)
+Downloading protobuf-3.20.3-cp38-cp38-win_amd64.whl (904 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 904.4/904.4 kB 72.5 kB/s eta 0:00:00
+Installing collected packages: protobuf
+  Attempting uninstall: protobuf
+    Found existing installation: protobuf 5.28.0
+    Uninstalling protobuf-5.28.0:
+      Successfully uninstalled protobuf-5.28.0
+Successfully installed protobuf-3.20.3
+
+(mlagents) E:\Unity-ML-Agents\AI-Parking-Unity-main\Parking Environment>mlagents-learn
+D:\Anaconda3_2024\envs\mlagents\lib\site-packages\torch\__init__.py:955: UserWarning: torch.set_default_tensor_type() is deprecated as of PyTorch 2.1, please use torch.set_default_dtype() and torch.set_default_device() as alternatives. (Triggered internally at C:\cb\pytorch_1000000000000\work\torch\csrc\tensor\python_tensor.cpp:434.)
+  _C._set_default_tensor_type(t)
+Traceback (most recent call last):
+  File "D:\Anaconda3_2024\envs\mlagents\lib\runpy.py", line 194, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "D:\Anaconda3_2024\envs\mlagents\lib\runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "D:\Anaconda3_2024\envs\mlagents\Scripts\mlagents-learn.exe\__main__.py", line 4, in <module>
+  File "D:\Anaconda3_2024\envs\mlagents\lib\site-packages\mlagents\trainers\learn.py", line 13, in <module>
+    from mlagents.trainers.trainer_controller import TrainerController
+  File "D:\Anaconda3_2024\envs\mlagents\lib\site-packages\mlagents\trainers\trainer_controller.py", line 13, in <module>
+    from mlagents.trainers.env_manager import EnvManager, EnvironmentStep
+  File "D:\Anaconda3_2024\envs\mlagents\lib\site-packages\mlagents\trainers\env_manager.py", line 13, in <module>
+    from mlagents.trainers.agent_processor import AgentManager, AgentManagerQueue
+  File "D:\Anaconda3_2024\envs\mlagents\lib\site-packages\mlagents\trainers\agent_processor.py", line 20, in <module>
+    from mlagents.trainers.trajectory import AgentStatus, Trajectory, AgentExperience
+  File "D:\Anaconda3_2024\envs\mlagents\lib\site-packages\mlagents\trainers\trajectory.py", line 4, in <module>
+    from mlagents.trainers.buffer import (
+  File "D:\Anaconda3_2024\envs\mlagents\lib\site-packages\mlagents\trainers\buffer.py", line 97, in <module>
+    class AgentBufferField(list):
+  File "D:\Anaconda3_2024\envs\mlagents\lib\site-packages\mlagents\trainers\buffer.py", line 210, in AgentBufferField
+    self, pad_value: np.float = 0, dtype: np.dtype = np.float32
+  File "D:\Anaconda3_2024\envs\mlagents\lib\site-packages\numpy\__init__.py", line 305, in __getattr__
+    raise AttributeError(__former_attrs__[attr])
+AttributeError: module 'numpy' has no attribute 'float'.
+`np.float` was a deprecated alias for the builtin `float`. To avoid this error in existing code, use `float` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.float64` here.
+The aliases was originally deprecated in NumPy 1.20; for more details and guidance see the original release note at:
+    https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+
+(mlagents) E:\Unity-ML-Agents\AI-Parking-Unity-main\Parking Environment>pip install numpy==1.19.5
+Collecting numpy==1.19.5
+  Downloading numpy-1.19.5-cp38-cp38-win_amd64.whl.metadata (2.0 kB)
+Downloading numpy-1.19.5-cp38-cp38-win_amd64.whl (13.3 MB)
+   ━╸━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 0.5/13.3 MB 40.6 kB/s eta 0:05:14
+ERROR: Exception:
+Traceback (most recent call last):
+  File "D:\Anaconda3_2024\envs\mlagents\lib\site-packages\pip\_vendor\urllib3\response.py", line 438, in _error_catcher
+    yield
+  File "D:\Anaconda3_2024\envs\mlagents\lib\site-packages\pip\_vendor\urllib3\response.py", line 561, in read
+    data = self._fp_read(amt) if not fp_closed else b""
+  File "D:\Anaconda3_2024\envs\mlagents\lib\site-packages\pip\_vendor\urllib3\response.py", line 527, in _fp_read
+    return self._fp.read(amt) if amt is not None else self._fp.read()
+  File "D:\Anaconda3_2024\envs\mlagents\lib\site-packages\pip\_vendor\cachecontrol\filewrapper.py", line 98, in read
+    data: bytes = self.__fp.read(amt)
+  File "D:\Anaconda3_2024\envs\mlagents\lib\http\client.py", line 459, in read
+    n = self.readinto(b)
+  File "D:\Anaconda3_2024\envs\mlagents\lib\http\client.py", line 503, in readinto
+    n = self.fp.readinto(b)
+  File "D:\Anaconda3_2024\envs\mlagents\lib\socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+  File "D:\Anaconda3_2024\envs\mlagents\lib\ssl.py", line 1274, in recv_into
+    return self.read(nbytes, buffer)
+  File "D:\Anaconda3_2024\envs\mlagents\lib\ssl.py", line 1132, in read
+    return self._sslobj.read(len, buffer)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Anaconda3_2024\envs\mlagents\lib\site-packages\pip\_internal\cli\base_command.py", line 105, in _run_wrapper
+    status = _inner_run()
+  File "D:\Anaconda3_2024\envs\mlagents\lib\site-packages\pip\_internal\cli\base_command.py", line 96, in _inner_run
+    return self.run(options, args)
+  File "D:\Anaconda3_2024\envs\mlagents\lib\site-packages\pip\_internal\cli\req_command.py", line 67, in wrapper
+    return func(self, options, args)
+  File "D:\Anaconda3_2024\envs\mlagents\lib\site-packages\pip\_internal\commands\install.py", line 379, in run
+    requirement_set = resolver.resolve(
+  File "D:\Anaconda3_2024\envs\mlagents\lib\site-packages\pip\_internal\resolution\resolvelib\resolver.py", line 179, in resolve
+    self.factory.preparer.prepare_linked_requirements_more(reqs)
+  File "D:\Anaconda3_2024\envs\mlagents\lib\site-packages\pip\_internal\operations\prepare.py", line 554, in prepare_linked_requirements_more
+    self._complete_partial_requirements(
+  File "D:\Anaconda3_2024\envs\mlagents\lib\site-packages\pip\_internal\operations\prepare.py", line 469, in _complete_partial_requirements
+    for link, (filepath, _) in batch_download:
+  File "D:\Anaconda3_2024\envs\mlagents\lib\site-packages\pip\_internal\network\download.py", line 184, in __call__
+    for chunk in chunks:
+  File "D:\Anaconda3_2024\envs\mlagents\lib\site-packages\pip\_internal\cli\progress_bars.py", line 55, in _rich_progress_bar
+    for chunk in iterable:
+  File "D:\Anaconda3_2024\envs\mlagents\lib\site-packages\pip\_internal\network\utils.py", line 65, in response_chunks
+    for chunk in response.raw.stream(
+  File "D:\Anaconda3_2024\envs\mlagents\lib\site-packages\pip\_vendor\urllib3\response.py", line 622, in stream
+    data = self.read(amt=amt, decode_content=decode_content)
+  File "D:\Anaconda3_2024\envs\mlagents\lib\site-packages\pip\_vendor\urllib3\response.py", line 587, in read
+    raise IncompleteRead(self._fp_bytes_read, self.length_remaining)
+  File "D:\Anaconda3_2024\envs\mlagents\lib\contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "D:\Anaconda3_2024\envs\mlagents\lib\site-packages\pip\_vendor\urllib3\response.py", line 455, in _error_catcher
+    raise ProtocolError("Connection broken: %r" % e, e)
+pip._vendor.urllib3.exceptions.ProtocolError: ("Connection broken: ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)", ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+
+(mlagents) E:\Unity-ML-Agents\AI-Parking-Unity-main\Parking Environment>pip install numpy==1.19.5
+WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x00000289A858FBB0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /simple/numpy/
+WARNING: Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x00000289A858FEB0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /simple/numpy/
+Collecting numpy==1.19.5
+  Using cached numpy-1.19.5-cp38-cp38-win_amd64.whl.metadata (2.0 kB)
+Downloading numpy-1.19.5-cp38-cp38-win_amd64.whl (13.3 MB)
+   ━━━━━━━━━━━━━━━━━━╸━━━━━━━━━━━━━━━━━━━━━ 6.3/13.3 MB 68.9 kB/s eta 0:01:42
+ERROR: Exception:
+Traceback (most recent call last):
+  File "D:\Anaconda3_2024\envs\mlagents\lib\site-packages\pip\_vendor\urllib3\response.py", line 438, in _error_catcher
+    yield
+  File "D:\Anaconda3_2024\envs\mlagents\lib\site-packages\pip\_vendor\urllib3\response.py", line 561, in read
+    data = self._fp_read(amt) if not fp_closed else b""
+  File "D:\Anaconda3_2024\envs\mlagents\lib\site-packages\pip\_vendor\urllib3\response.py", line 527, in _fp_read
+    return self._fp.read(amt) if amt is not None else self._fp.read()
+  File "D:\Anaconda3_2024\envs\mlagents\lib\site-packages\pip\_vendor\cachecontrol\filewrapper.py", line 98, in read
+    data: bytes = self.__fp.read(amt)
+  File "D:\Anaconda3_2024\envs\mlagents\lib\http\client.py", line 459, in read
+    n = self.readinto(b)
+  File "D:\Anaconda3_2024\envs\mlagents\lib\http\client.py", line 503, in readinto
+    n = self.fp.readinto(b)
+  File "D:\Anaconda3_2024\envs\mlagents\lib\socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+  File "D:\Anaconda3_2024\envs\mlagents\lib\ssl.py", line 1274, in recv_into
+    return self.read(nbytes, buffer)
+  File "D:\Anaconda3_2024\envs\mlagents\lib\ssl.py", line 1132, in read
+    return self._sslobj.read(len, buffer)
+socket.timeout: The read operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Anaconda3_2024\envs\mlagents\lib\site-packages\pip\_internal\cli\base_command.py", line 105, in _run_wrapper
+    status = _inner_run()
+  File "D:\Anaconda3_2024\envs\mlagents\lib\site-packages\pip\_internal\cli\base_command.py", line 96, in _inner_run
+    return self.run(options, args)
+  File "D:\Anaconda3_2024\envs\mlagents\lib\site-packages\pip\_internal\cli\req_command.py", line 67, in wrapper
+    return func(self, options, args)
+  File "D:\Anaconda3_2024\envs\mlagents\lib\site-packages\pip\_internal\commands\install.py", line 379, in run
+    requirement_set = resolver.resolve(
+  File "D:\Anaconda3_2024\envs\mlagents\lib\site-packages\pip\_internal\resolution\resolvelib\resolver.py", line 179, in resolve
+    self.factory.preparer.prepare_linked_requirements_more(reqs)
+  File "D:\Anaconda3_2024\envs\mlagents\lib\site-packages\pip\_internal\operations\prepare.py", line 554, in prepare_linked_requirements_more
+    self._complete_partial_requirements(
+  File "D:\Anaconda3_2024\envs\mlagents\lib\site-packages\pip\_internal\operations\prepare.py", line 469, in _complete_partial_requirements
+    for link, (filepath, _) in batch_download:
+  File "D:\Anaconda3_2024\envs\mlagents\lib\site-packages\pip\_internal\network\download.py", line 184, in __call__
+    for chunk in chunks:
+  File "D:\Anaconda3_2024\envs\mlagents\lib\site-packages\pip\_internal\cli\progress_bars.py", line 55, in _rich_progress_bar
+    for chunk in iterable:
+  File "D:\Anaconda3_2024\envs\mlagents\lib\site-packages\pip\_internal\network\utils.py", line 65, in response_chunks
+    for chunk in response.raw.stream(
+  File "D:\Anaconda3_2024\envs\mlagents\lib\site-packages\pip\_vendor\urllib3\response.py", line 622, in stream
+    data = self.read(amt=amt, decode_content=decode_content)
+  File "D:\Anaconda3_2024\envs\mlagents\lib\site-packages\pip\_vendor\urllib3\response.py", line 587, in read
+    raise IncompleteRead(self._fp_bytes_read, self.length_remaining)
+  File "D:\Anaconda3_2024\envs\mlagents\lib\contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "D:\Anaconda3_2024\envs\mlagents\lib\site-packages\pip\_vendor\urllib3\response.py", line 443, in _error_catcher
+    raise ReadTimeoutError(self._pool, None, "Read timed out.")
+pip._vendor.urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='files.pythonhosted.org', port=443): Read timed out.
+
+(mlagents) E:\Unity-ML-Agents\AI-Parking-Unity-main\Parking Environment>pip install numpy==1.19.5
+Collecting numpy==1.19.5
+  Using cached numpy-1.19.5-cp38-cp38-win_amd64.whl.metadata (2.0 kB)
+Downloading numpy-1.19.5-cp38-cp38-win_amd64.whl (13.3 MB)
+   ━╸━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 0.5/13.3 MB 18.6 kB/s eta 0:11:26
+ERROR: Exception:
+Traceback (most recent call last):
+  File "D:\Anaconda3_2024\envs\mlagents\lib\site-packages\pip\_vendor\urllib3\response.py", line 438, in _error_catcher
+    yield
+  File "D:\Anaconda3_2024\envs\mlagents\lib\site-packages\pip\_vendor\urllib3\response.py", line 561, in read
+    data = self._fp_read(amt) if not fp_closed else b""
+  File "D:\Anaconda3_2024\envs\mlagents\lib\site-packages\pip\_vendor\urllib3\response.py", line 527, in _fp_read
+    return self._fp.read(amt) if amt is not None else self._fp.read()
+  File "D:\Anaconda3_2024\envs\mlagents\lib\site-packages\pip\_vendor\cachecontrol\filewrapper.py", line 98, in read
+    data: bytes = self.__fp.read(amt)
+  File "D:\Anaconda3_2024\envs\mlagents\lib\http\client.py", line 459, in read
+    n = self.readinto(b)
+  File "D:\Anaconda3_2024\envs\mlagents\lib\http\client.py", line 503, in readinto
+    n = self.fp.readinto(b)
+  File "D:\Anaconda3_2024\envs\mlagents\lib\socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+  File "D:\Anaconda3_2024\envs\mlagents\lib\ssl.py", line 1274, in recv_into
+    return self.read(nbytes, buffer)
+  File "D:\Anaconda3_2024\envs\mlagents\lib\ssl.py", line 1132, in read
+    return self._sslobj.read(len, buffer)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Anaconda3_2024\envs\mlagents\lib\site-packages\pip\_internal\cli\base_command.py", line 105, in _run_wrapper
+    status = _inner_run()
+  File "D:\Anaconda3_2024\envs\mlagents\lib\site-packages\pip\_internal\cli\base_command.py", line 96, in _inner_run
+    return self.run(options, args)
+  File "D:\Anaconda3_2024\envs\mlagents\lib\site-packages\pip\_internal\cli\req_command.py", line 67, in wrapper
+    return func(self, options, args)
+  File "D:\Anaconda3_2024\envs\mlagents\lib\site-packages\pip\_internal\commands\install.py", line 379, in run
+    requirement_set = resolver.resolve(
+  File "D:\Anaconda3_2024\envs\mlagents\lib\site-packages\pip\_internal\resolution\resolvelib\resolver.py", line 179, in resolve
+    self.factory.preparer.prepare_linked_requirements_more(reqs)
+  File "D:\Anaconda3_2024\envs\mlagents\lib\site-packages\pip\_internal\operations\prepare.py", line 554, in prepare_linked_requirements_more
+    self._complete_partial_requirements(
+  File "D:\Anaconda3_2024\envs\mlagents\lib\site-packages\pip\_internal\operations\prepare.py", line 469, in _complete_partial_requirements
+    for link, (filepath, _) in batch_download:
+  File "D:\Anaconda3_2024\envs\mlagents\lib\site-packages\pip\_internal\network\download.py", line 184, in __call__
+    for chunk in chunks:
+  File "D:\Anaconda3_2024\envs\mlagents\lib\site-packages\pip\_internal\cli\progress_bars.py", line 55, in _rich_progress_bar
+    for chunk in iterable:
+  File "D:\Anaconda3_2024\envs\mlagents\lib\site-packages\pip\_internal\network\utils.py", line 65, in response_chunks
+    for chunk in response.raw.stream(
+  File "D:\Anaconda3_2024\envs\mlagents\lib\site-packages\pip\_vendor\urllib3\response.py", line 622, in stream
+    data = self.read(amt=amt, decode_content=decode_content)
+  File "D:\Anaconda3_2024\envs\mlagents\lib\site-packages\pip\_vendor\urllib3\response.py", line 587, in read
+    raise IncompleteRead(self._fp_bytes_read, self.length_remaining)
+  File "D:\Anaconda3_2024\envs\mlagents\lib\contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "D:\Anaconda3_2024\envs\mlagents\lib\site-packages\pip\_vendor\urllib3\response.py", line 455, in _error_catcher
+    raise ProtocolError("Connection broken: %r" % e, e)
+pip._vendor.urllib3.exceptions.ProtocolError: ("Connection broken: ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)", ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+
+(mlagents) E:\Unity-ML-Agents\AI-Parking-Unity-main\Parking Environment>pip install numpy==1.19.5
+Collecting numpy==1.19.5
+  Using cached numpy-1.19.5-cp38-cp38-win_amd64.whl.metadata (2.0 kB)
+Downloading numpy-1.19.5-cp38-cp38-win_amd64.whl (13.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 13.3/13.3 MB 1.0 MB/s eta 0:00:00
+Installing collected packages: numpy
+  Attempting uninstall: numpy
+    Found existing installation: numpy 1.21.2
+    Uninstalling numpy-1.21.2:
+      Successfully uninstalled numpy-1.21.2
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+mlagents-envs 0.30.0 requires numpy==1.21.2, but you have numpy 1.19.5 which is incompatible.
+Successfully installed numpy-1.19.5
+
+(mlagents) E:\Unity-ML-Agents\AI-Parking-Unity-main\Parking Environment>mlagents-learn
+Traceback (most recent call last):
+  File "D:\Anaconda3_2024\envs\mlagents\lib\runpy.py", line 194, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "D:\Anaconda3_2024\envs\mlagents\lib\runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "D:\Anaconda3_2024\envs\mlagents\Scripts\mlagents-learn.exe\__main__.py", line 4, in <module>
+  File "D:\Anaconda3_2024\envs\mlagents\lib\site-packages\mlagents\trainers\learn.py", line 2, in <module>
+    from mlagents import torch_utils
+  File "D:\Anaconda3_2024\envs\mlagents\lib\site-packages\mlagents\torch_utils\__init__.py", line 1, in <module>
+    from mlagents.torch_utils.torch import torch as torch  # noqa
+  File "D:\Anaconda3_2024\envs\mlagents\lib\site-packages\mlagents\torch_utils\torch.py", line 6, in <module>
+    from mlagents.trainers.settings import TorchSettings
+  File "D:\Anaconda3_2024\envs\mlagents\lib\site-packages\mlagents\trainers\settings.py", line 25, in <module>
+    from mlagents.trainers.cli_utils import StoreConfigFile, DetectDefault, parser
+  File "D:\Anaconda3_2024\envs\mlagents\lib\site-packages\mlagents\trainers\cli_utils.py", line 5, in <module>
+    from mlagents_envs.environment import UnityEnvironment
+  File "D:\Anaconda3_2024\envs\mlagents\lib\site-packages\mlagents_envs\environment.py", line 36, in <module>
+    from mlagents_envs.rpc_utils import behavior_spec_from_proto, steps_from_proto
+  File "D:\Anaconda3_2024\envs\mlagents\lib\site-packages\mlagents_envs\rpc_utils.py", line 21, in <module>
+    from PIL import Image
+  File "D:\Anaconda3_2024\envs\mlagents\lib\site-packages\PIL\Image.py", line 68, in <module>
+    from ._typing import StrOrBytesPath, TypeGuard
+  File "D:\Anaconda3_2024\envs\mlagents\lib\site-packages\PIL\_typing.py", line 10, in <module>
+    NumpyArray = npt.NDArray[Any]
+AttributeError: module 'numpy.typing' has no attribute 'NDArray'
+
+(mlagents) E:\Unity-ML-Agents\AI-Parking-Unity-main\Parking Environment>pip install --upgrade numpy
+Requirement already satisfied: numpy in d:\anaconda3_2024\envs\mlagents\lib\site-packages (1.19.5)
+Collecting numpy
+  Using cached numpy-1.24.4-cp38-cp38-win_amd64.whl.metadata (5.6 kB)
+Downloading numpy-1.24.4-cp38-cp38-win_amd64.whl (14.9 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 14.9/14.9 MB 847.5 kB/s eta 0:00:00
+Installing collected packages: numpy
+  Attempting uninstall: numpy
+    Found existing installation: numpy 1.19.5
+    Uninstalling numpy-1.19.5:
+      Successfully uninstalled numpy-1.19.5
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+mlagents-envs 0.30.0 requires numpy==1.21.2, but you have numpy 1.24.4 which is incompatible.
+Successfully installed numpy-1.24.3
+
+(mlagents) E:\Unity-ML-Agents\AI-Parking-Unity-main\Parking Environment>pip install --upgrade numpy
+Requirement already satisfied: numpy in d:\anaconda3_2024\envs\mlagents\lib\site-packages (1.24.3)
+Collecting numpy
+  Using cached numpy-1.24.4-cp38-cp38-win_amd64.whl.metadata (5.6 kB)
+Using cached numpy-1.24.4-cp38-cp38-win_amd64.whl (14.9 MB)
+Installing collected packages: numpy
+  Attempting uninstall: numpy
+    Found existing installation: numpy 1.24.3
+    Uninstalling numpy-1.24.3:
+      Successfully uninstalled numpy-1.24.3
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+mlagents-envs 0.30.0 requires numpy==1.21.2, but you have numpy 1.24.4 which is incompatible.
+Successfully installed numpy-1.24.4
+
+(mlagents) E:\Unity-ML-Agents\AI-Parking-Unity-main\Parking Environment>mlagents-learn
+D:\Anaconda3_2024\envs\mlagents\lib\site-packages\torch\__init__.py:955: UserWarning: torch.set_default_tensor_type() is deprecated as of PyTorch 2.1, please use torch.set_default_dtype() and torch.set_default_device() as alternatives. (Triggered internally at C:\cb\pytorch_1000000000000\work\torch\csrc\tensor\python_tensor.cpp:434.)
+  _C._set_default_tensor_type(t)
+Traceback (most recent call last):
+  File "D:\Anaconda3_2024\envs\mlagents\lib\runpy.py", line 194, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "D:\Anaconda3_2024\envs\mlagents\lib\runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "D:\Anaconda3_2024\envs\mlagents\Scripts\mlagents-learn.exe\__main__.py", line 4, in <module>
+  File "D:\Anaconda3_2024\envs\mlagents\lib\site-packages\mlagents\trainers\learn.py", line 13, in <module>
+    from mlagents.trainers.trainer_controller import TrainerController
+  File "D:\Anaconda3_2024\envs\mlagents\lib\site-packages\mlagents\trainers\trainer_controller.py", line 13, in <module>
+    from mlagents.trainers.env_manager import EnvManager, EnvironmentStep
+  File "D:\Anaconda3_2024\envs\mlagents\lib\site-packages\mlagents\trainers\env_manager.py", line 13, in <module>
+    from mlagents.trainers.agent_processor import AgentManager, AgentManagerQueue
+  File "D:\Anaconda3_2024\envs\mlagents\lib\site-packages\mlagents\trainers\agent_processor.py", line 20, in <module>
+    from mlagents.trainers.trajectory import AgentStatus, Trajectory, AgentExperience
+  File "D:\Anaconda3_2024\envs\mlagents\lib\site-packages\mlagents\trainers\trajectory.py", line 4, in <module>
+    from mlagents.trainers.buffer import (
+  File "D:\Anaconda3_2024\envs\mlagents\lib\site-packages\mlagents\trainers\buffer.py", line 97, in <module>
+    class AgentBufferField(list):
+  File "D:\Anaconda3_2024\envs\mlagents\lib\site-packages\mlagents\trainers\buffer.py", line 210, in AgentBufferField
+    self, pad_value: np.float = 0, dtype: np.dtype = np.float32
+  File "D:\Anaconda3_2024\envs\mlagents\lib\site-packages\numpy\__init__.py", line 305, in __getattr__
+    raise AttributeError(__former_attrs__[attr])
+AttributeError: module 'numpy' has no attribute 'float'.
+`np.float` was a deprecated alias for the builtin `float`. To avoid this error in existing code, use `float` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.float64` here.
+The aliases was originally deprecated in NumPy 1.20; for more details and guidance see the original release note at:
+    https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+
+(mlagents) E:\Unity-ML-Agents\AI-Parking-Unity-main\Parking Environment>mlagents-learn
+D:\Anaconda3_2024\envs\mlagents\lib\site-packages\torch\__init__.py:955: UserWarning: torch.set_default_tensor_type() is deprecated as of PyTorch 2.1, please use torch.set_default_dtype() and torch.set_default_device() as alternatives. (Triggered internally at C:\cb\pytorch_1000000000000\work\torch\csrc\tensor\python_tensor.cpp:434.)
+  _C._set_default_tensor_type(t)
+
+            ┐  ╖
+        ╓╖╬│╡  ││╬╖╖
+    ╓╖╬│││││┘  ╬│││││╬╖
+ ╖╬│││││╬╜        ╙╬│││││╖╖                               ╗╗╗
+ ╬╬╬╬╖││╦╖        ╖╬││╗╣╣╣╬      ╟╣╣╬    ╟╣╣╣             ╜╜╜  ╟╣╣
+ ╬╬╬╬╬╬╬╬╖│╬╖╖╓╬╪│╓╣╣╣╣╣╣╣╬      ╟╣╣╬    ╟╣╣╣ ╒╣╣╖╗╣╣╣╗   ╣╣╣ ╣╣╣╣╣╣ ╟╣╣╖   ╣╣╣
+ ╬╬╬╬┐  ╙╬╬╬╬│╓╣╣╣╝╜  ╫╣╣╣╬      ╟╣╣╬    ╟╣╣╣ ╟╣╣╣╙ ╙╣╣╣  ╣╣╣ ╙╟╣╣╜╙  ╫╣╣  ╟╣╣
+ ╬╬╬╬┐     ╙╬╬╣╣      ╫╣╣╣╬      ╟╣╣╬    ╟╣╣╣ ╟╣╣╬   ╣╣╣  ╣╣╣  ╟╣╣     ╣╣╣┌╣╣╜
+ ╬╬╬╜       ╬╬╣╣      ╙╝╣╣╬      ╙╣╣╣╗╖╓╗╣╣╣╜ ╟╣╣╬   ╣╣╣  ╣╣╣  ╟╣╣╦╓    ╣╣╣╣╣
+ ╙   ╓╦╖    ╬╬╣╣   ╓╗╗╖            ╙╝╣╣╣╣╝╜   ╘╝╝╜   ╝╝╝  ╝╝╝   ╙╣╣╣    ╟╣╣╣
+   ╩╬╬╬╬╬╬╦╦╬╬╣╣╗╣╣╣╣╣╣╣╝                                             ╫╣╣╣╣
+      ╙╬╬╬╬╬╬╬╣╣╣╣╣╣╝╜
+          ╙╬╬╬╣╣╣╜
+             ╙
+
+ Version information:
+  ml-agents: 0.30.0,
+  ml-agents-envs: 0.30.0,
+  Communicator API: 1.5.0,
+  PyTorch: 2.4.1
+D:\Anaconda3_2024\envs\mlagents\lib\site-packages\torch\__init__.py:955: UserWarning: torch.set_default_tensor_type() is deprecated as of PyTorch 2.1, please use torch.set_default_dtype() and torch.set_default_device() as alternatives. (Triggered internally at C:\cb\pytorch_1000000000000\work\torch\csrc\tensor\python_tensor.cpp:434.)
+  _C._set_default_tensor_type(t)
+[INFO] Listening on port 5004. Start training by pressing the Play button in the Unity Editor.
+[INFO] Learning was interrupted. Please wait while the graph is generated.
